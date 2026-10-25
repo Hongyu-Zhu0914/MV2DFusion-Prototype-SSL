@@ -1,4 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+import gc
 import os
 from collections import OrderedDict
 from os import path as osp
@@ -82,24 +83,28 @@ def create_nuscenes_infos(root_path,
             len(train_scenes), len(val_scenes)))
     train_nusc_infos, val_nusc_infos = _fill_trainval_infos(
         nusc, train_scenes, val_scenes, test, max_sweeps=max_sweeps)
+    # The devkit retains all metadata tables and reverse indexes. Releasing it
+    # before pickling avoids a second large memory peak on small CPU instances.
+    del nusc
+    gc.collect()
 
     metadata = dict(version=version)
     if test:
         print('test sample: {}'.format(len(train_nusc_infos)))
         data = dict(infos=train_nusc_infos, metadata=metadata)
         info_path = osp.join(root_path,
-                             '{}_temporal_infos_test_new.pkl'.format(info_prefix))
+                             '{}_temporal_infos_test.pkl'.format(info_prefix))
         mmcv.dump(data, info_path)
     else:
         print('train sample: {}, val sample: {}'.format(
             len(train_nusc_infos), len(val_nusc_infos)))
         data = dict(infos=train_nusc_infos, metadata=metadata)
         info_path = osp.join(root_path,
-                             '{}_temporal_infos_train_new.pkl'.format(info_prefix))
+                             '{}_temporal_infos_train.pkl'.format(info_prefix))
         mmcv.dump(data, info_path)
         data['infos'] = val_nusc_infos
         info_val_path = osp.join(root_path,
-                                 '{}_temporal_infos_val_new.pkl'.format(info_prefix))
+                                 '{}_temporal_infos_val.pkl'.format(info_prefix))
         mmcv.dump(data, info_val_path)
 
 
@@ -172,6 +177,7 @@ def _fill_trainval_infos(nusc,
                              sd_rec['calibrated_sensor_token'])
         pose_record = nusc.get('ego_pose', sd_rec['ego_pose_token'])
         lidar_path, boxes, _ = nusc.get_sample_data(lidar_token)
+        lidar_path = os.path.realpath(lidar_path)
 
         mmcv.check_file_exist(lidar_path)
 
@@ -292,7 +298,11 @@ def _fill_trainval_infos(nusc,
                 gt_2dlabels = []
                 depths = []
                 visibility = []
-                (height, width, _) = mmcv.imread(cam_info['data_path']).shape
+                # nuScenes stores the exact image dimensions in sample_data.
+                # Reading every JPEG solely for its shape is very expensive
+                # during full-dataset metadata conversion.
+                cam_sd = nusc.get('sample_data', cam_info['sample_data_token'])
+                height, width = cam_sd['height'], cam_sd['width']
                 annos_cam = get_2d_boxes(nusc, cam_info['sample_data_token'], visibilities= ['', '1', '2', '3', '4'], mono3d=True)
                 for i, ann in enumerate(annos_cam):
                     if ann is None:
@@ -344,8 +354,6 @@ def _fill_trainval_infos(nusc,
                     visibilities = visibilities,)
             )
 
-        print(info['bboxes3d_cams'])
-        
         if sample['scene_token'] in train_scenes:
             train_nusc_infos.append(info)
         else:
@@ -382,7 +390,7 @@ def obtain_sensor2top(nusc,
     cs_record = nusc.get('calibrated_sensor',
                          sd_rec['calibrated_sensor_token'])
     pose_record = nusc.get('ego_pose', sd_rec['ego_pose_token'])
-    data_path = str(nusc.get_sample_data_path(sd_rec['token']))
+    data_path = os.path.realpath(str(nusc.get_sample_data_path(sd_rec['token'])))
     if os.getcwd() in data_path:  # path from lyftdataset is absolute path
         data_path = data_path.split(f'{os.getcwd()}/')[-1]  # relative path
     sweep = {

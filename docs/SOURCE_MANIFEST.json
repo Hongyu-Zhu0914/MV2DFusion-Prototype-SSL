@@ -1,0 +1,1670 @@
+{
+  "date": "2026-10-26",
+  "upstream": "wangzt-halo/MV2DFusion",
+  "upstream_reference": "e4bc2d93f4009ce7210188da79860730676398b6",
+  "note": "Original source bytes preserved; organized wrappers and public documentation added separately.",
+  "files": [
+    {
+      "source_path": "projects/__init__.py",
+      "published_path": "projects/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source_path": "projects/configs/_base_/default_runtime.py",
+      "published_path": "projects/configs/_base_/default_runtime.py",
+      "bytes": 667,
+      "sha256": "c08e88bd7f224c8c512e94977a4ed1b4450aa2ad435bc0c0205acfd49f7ad4fe"
+    },
+    {
+      "source_path": "projects/configs/_base_/datasets/coco_instance.py",
+      "published_path": "projects/configs/_base_/datasets/coco_instance.py",
+      "bytes": 1718,
+      "sha256": "1306f8c091776ad10a8cdc871c47e4e451490b7b3686c2c5c787cf3666398f6a"
+    },
+    {
+      "source_path": "projects/configs/_base_/datasets/kitti-3d-3class.py",
+      "published_path": "projects/configs/_base_/datasets/kitti-3d-3class.py",
+      "bytes": 5095,
+      "sha256": "30ad6f0a3bc80de00e514af96922f941a6d2cb5d86113ca0d8e3a67462790614"
+    },
+    {
+      "source_path": "projects/configs/_base_/datasets/kitti-3d-car.py",
+      "published_path": "projects/configs/_base_/datasets/kitti-3d-car.py",
+      "bytes": 4503,
+      "sha256": "045cc89e3e3d34fd5027d549aaca3fbd8706947fb3d9c34e64d35aa99f62aa7e"
+    },
+    {
+      "source_path": "projects/configs/_base_/datasets/kitti-mono3d.py",
+      "published_path": "projects/configs/_base_/datasets/kitti-mono3d.py",
+      "bytes": 3054,
+      "sha256": "6c0cc49728415a475bb9066f58095895a6babeee6c4938e52e85580a24ad7b26"
+    },
+    {
+      "source_path": "projects/configs/_base_/datasets/lyft-3d.py",
+      "published_path": "projects/configs/_base_/datasets/lyft-3d.py",
+      "bytes": 4568,
+      "sha256": "5d4ed5b36fc6d178b87686493a5dd199ed82f016ba06c1a15ebe949ef6bca817"
+    },
+    {
+      "source_path": "projects/configs/_base_/datasets/nuim_instance.py",
+      "published_path": "projects/configs/_base_/datasets/nuim_instance.py",
+      "bytes": 1991,
+      "sha256": "b6bf9ae488b3c56b04666d2a6ce769ed012880887311aea5fe82ac0ce707779c"
+    },
+    {
+      "source_path": "projects/configs/_base_/datasets/nus-3d.py",
+      "published_path": "projects/configs/_base_/datasets/nus-3d.py",
+      "bytes": 4915,
+      "sha256": "89f7e6d1fa1707826b6d409d522cddea06ab6489ab030222e25cd83af7e77445"
+    },
+    {
+      "source_path": "projects/configs/_base_/datasets/nus-mono3d.py",
+      "published_path": "projects/configs/_base_/datasets/nus-mono3d.py",
+      "bytes": 3230,
+      "sha256": "5b9632ef9ed3d858622a717790601aa35520ff39b2d322f9687cec72b7b71a34"
+    },
+    {
+      "source_path": "projects/configs/_base_/datasets/nuscenes_2d.py",
+      "published_path": "projects/configs/_base_/datasets/nuscenes_2d.py",
+      "bytes": 2855,
+      "sha256": "9003bf76baf2169693087fde78da3f05199b77184906be08c624544cc6641e60"
+    },
+    {
+      "source_path": "projects/configs/_base_/datasets/range100_lyft-3d.py",
+      "published_path": "projects/configs/_base_/datasets/range100_lyft-3d.py",
+      "bytes": 4572,
+      "sha256": "73311a145fba735ae5360de7ab8c7461b464256f6a88497b97284cda52ed2451"
+    },
+    {
+      "source_path": "projects/configs/_base_/datasets/s3dis-3d-5class.py",
+      "published_path": "projects/configs/_base_/datasets/s3dis-3d-5class.py",
+      "bytes": 3562,
+      "sha256": "5f6110beb0b28900bbb5c6bfe26b453ca2f48596e970fdeda4f08be2edbfbc97"
+    },
+    {
+      "source_path": "projects/configs/_base_/datasets/s3dis_seg-3d-13class.py",
+      "published_path": "projects/configs/_base_/datasets/s3dis_seg-3d-13class.py",
+      "bytes": 5136,
+      "sha256": "0a1c45ff5fb67b1ee0f0669b241ef362af9f539aeed0347099bc31d4513575a6"
+    },
+    {
+      "source_path": "projects/configs/_base_/datasets/scannet-3d-18class.py",
+      "published_path": "projects/configs/_base_/datasets/scannet-3d-18class.py",
+      "bytes": 4819,
+      "sha256": "f58b2095a614e4b482bba72cc7ca02a4868432863665e726120b43bf0e46b956"
+    },
+    {
+      "source_path": "projects/configs/_base_/datasets/scannet_seg-3d-20class.py",
+      "published_path": "projects/configs/_base_/datasets/scannet_seg-3d-20class.py",
+      "bytes": 5074,
+      "sha256": "42df3c7b8868b5577b3c85191a784014c4a2ae0af1673f9f21352112d6c3a31c"
+    },
+    {
+      "source_path": "projects/configs/_base_/datasets/sunrgbd-3d-10class.py",
+      "published_path": "projects/configs/_base_/datasets/sunrgbd-3d-10class.py",
+      "bytes": 4063,
+      "sha256": "6a40bc6fa52f98c97ca09547c181b9d928e6ec31b4b44dc763eecfdc3a306ada"
+    },
+    {
+      "source_path": "projects/configs/_base_/datasets/waymoD5-3d-3class.py",
+      "published_path": "projects/configs/_base_/datasets/waymoD5-3d-3class.py",
+      "bytes": 4779,
+      "sha256": "f1617c5e0338846b788390a10720937ce645a375c56af570de9f96f3edcdfdfc"
+    },
+    {
+      "source_path": "projects/configs/_base_/datasets/waymoD5-3d-car.py",
+      "published_path": "projects/configs/_base_/datasets/waymoD5-3d-car.py",
+      "bytes": 4683,
+      "sha256": "6fe8eb4178c0b2dc76da1ccbfbb2c3cc84560ba6477d50c564653f57757d6ec1"
+    },
+    {
+      "source_path": "projects/configs/_base_/models/3dssd.py",
+      "published_path": "projects/configs/_base_/models/3dssd.py",
+      "bytes": 3085,
+      "sha256": "d5d7cf484537d442ada2c9662d0f1f139d98c11b04f15ec5aea7646a034dd646"
+    },
+    {
+      "source_path": "projects/configs/_base_/models/cascade_mask_rcnn_r50_fpn.py",
+      "published_path": "projects/configs/_base_/models/cascade_mask_rcnn_r50_fpn.py",
+      "bytes": 6966,
+      "sha256": "45dcee72eb880d5e8edd4faae0b8d1b23b9865f0351680a907d99efe7a187353"
+    },
+    {
+      "source_path": "projects/configs/_base_/models/centerpoint_01voxel_second_secfpn_nus.py",
+      "published_path": "projects/configs/_base_/models/centerpoint_01voxel_second_secfpn_nus.py",
+      "bytes": 3275,
+      "sha256": "f6163544fe3e3418b515313057fec34242126440fb278684cc055f210f2a5b04"
+    },
+    {
+      "source_path": "projects/configs/_base_/models/centerpoint_02pillar_second_secfpn_nus.py",
+      "published_path": "projects/configs/_base_/models/centerpoint_02pillar_second_secfpn_nus.py",
+      "bytes": 3183,
+      "sha256": "413c49c57712f4e623db37dc62173daad04760aa71c32a030322547c88f6caf2"
+    },
+    {
+      "source_path": "projects/configs/_base_/models/dgcnn.py",
+      "published_path": "projects/configs/_base_/models/dgcnn.py",
+      "bytes": 980,
+      "sha256": "2dae24dbf3e8c38fbbcc927fa5ec7ab75544f2ed42c4efbcc1b9dcf02e4eb1c4"
+    },
+    {
+      "source_path": "projects/configs/_base_/models/fcaf3d.py",
+      "published_path": "projects/configs/_base_/models/fcaf3d.py",
+      "bytes": 497,
+      "sha256": "2f80fd3089d2a75a33a275535ab28d2816818aac4a41bb0486f78b0a87f49eec"
+    },
+    {
+      "source_path": "projects/configs/_base_/models/fcos3d.py",
+      "published_path": "projects/configs/_base_/models/fcos3d.py",
+      "bytes": 2432,
+      "sha256": "7104a6db1daf1b8272df9d8a8b81930fae0fdfb79fd12923e01ef58d7f18f6de"
+    },
+    {
+      "source_path": "projects/configs/_base_/models/groupfree3d.py",
+      "published_path": "projects/configs/_base_/models/groupfree3d.py",
+      "bytes": 2593,
+      "sha256": "fbbe18add44f9b13cc41bdebf77c4fffcef90bf903b5738a816b5a6d0e18d1ca"
+    },
+    {
+      "source_path": "projects/configs/_base_/models/h3dnet.py",
+      "published_path": "projects/configs/_base_/models/h3dnet.py",
+      "bytes": 10970,
+      "sha256": "9aa03ba4e3a8345421ed525ea601d76f79c13038a89a79b811f86de1acafe46e"
+    },
+    {
+      "source_path": "projects/configs/_base_/models/hv_pointpillars_fpn_lyft.py",
+      "published_path": "projects/configs/_base_/models/hv_pointpillars_fpn_lyft.py",
+      "bytes": 963,
+      "sha256": "cb0a3ab6233900184a8a2e97031d0ced8d4980254752f620d0f9296a4c977433"
+    },
+    {
+      "source_path": "projects/configs/_base_/models/hv_pointpillars_fpn_nus.py",
+      "published_path": "projects/configs/_base_/models/hv_pointpillars_fpn_nus.py",
+      "bytes": 3294,
+      "sha256": "e2bbf31d4d7ae41e1a28afa3269367eca38cbb930013569ddfb02ac5a27bd8fd"
+    },
+    {
+      "source_path": "projects/configs/_base_/models/hv_pointpillars_fpn_range100_lyft.py",
+      "published_path": "projects/configs/_base_/models/hv_pointpillars_fpn_range100_lyft.py",
+      "bytes": 975,
+      "sha256": "4928c31fcbc6ff33c9a97e5e76c329fb5b534eacbabb0604005c5c5d23f7cd50"
+    },
+    {
+      "source_path": "projects/configs/_base_/models/hv_pointpillars_secfpn_kitti.py",
+      "published_path": "projects/configs/_base_/models/hv_pointpillars_secfpn_kitti.py",
+      "bytes": 3177,
+      "sha256": "3989283f7e221a74c18ca85df9e7021dcfb98a9b4805deaea585d56981ce1a53"
+    },
+    {
+      "source_path": "projects/configs/_base_/models/hv_pointpillars_secfpn_waymo.py",
+      "published_path": "projects/configs/_base_/models/hv_pointpillars_secfpn_waymo.py",
+      "bytes": 3963,
+      "sha256": "1bda340bfbd401174c801e50d67bc691fbbe0c99969c43d4369a4eb14ea1641f"
+    },
+    {
+      "source_path": "projects/configs/_base_/models/hv_second_secfpn_kitti.py",
+      "published_path": "projects/configs/_base_/models/hv_second_secfpn_kitti.py",
+      "bytes": 2909,
+      "sha256": "c6d3a03794fddac0210fa8ca5e5dc13473c68f698deb257ec44b9c6f68a040cc"
+    },
+    {
+      "source_path": "projects/configs/_base_/models/hv_second_secfpn_waymo.py",
+      "published_path": "projects/configs/_base_/models/hv_second_secfpn_waymo.py",
+      "bytes": 3479,
+      "sha256": "8b28517b511f357991bdb8f8878695d54d4bd62e4ba3865796ce79220ace94aa"
+    },
+    {
+      "source_path": "projects/configs/_base_/models/imvotenet_image.py",
+      "published_path": "projects/configs/_base_/models/imvotenet_image.py",
+      "bytes": 3563,
+      "sha256": "795e83d38570572f16dee355fb616162206e5e0afe3c05686e5628a16be68936"
+    },
+    {
+      "source_path": "projects/configs/_base_/models/mask_rcnn_r50_fpn.py",
+      "published_path": "projects/configs/_base_/models/mask_rcnn_r50_fpn.py",
+      "bytes": 4144,
+      "sha256": "d43b5d86157800bbbec5b38d379d94f1ccd932403981c4f0efe5436f369c36c6"
+    },
+    {
+      "source_path": "projects/configs/_base_/models/paconv_cuda_ssg.py",
+      "published_path": "projects/configs/_base_/models/paconv_cuda_ssg.py",
+      "bytes": 180,
+      "sha256": "47645b3f815fe910b09deabb45fab95e56944aeb0f6caf51322ed2cc288373fd"
+    },
+    {
+      "source_path": "projects/configs/_base_/models/paconv_ssg.py",
+      "published_path": "projects/configs/_base_/models/paconv_ssg.py",
+      "bytes": 2005,
+      "sha256": "dfa6be75021f499fbc4b2eb664de74f99777cef6e11b1fad1b2c9ba11c8867a8"
+    },
+    {
+      "source_path": "projects/configs/_base_/models/parta2.py",
+      "published_path": "projects/configs/_base_/models/parta2.py",
+      "bytes": 7012,
+      "sha256": "6eeca91a54b12841ab96b049fa56bf391f408dc6e0dd06e5f2021c257eea4e8a"
+    },
+    {
+      "source_path": "projects/configs/_base_/models/pgd.py",
+      "published_path": "projects/configs/_base_/models/pgd.py",
+      "bytes": 1787,
+      "sha256": "116ee394561779d8b3d971df2d74e81296a08dd65da8968f9b09b21765fe6e79"
+    },
+    {
+      "source_path": "projects/configs/_base_/models/point_rcnn.py",
+      "published_path": "projects/configs/_base_/models/point_rcnn.py",
+      "bytes": 5132,
+      "sha256": "c68bc29c970405bb9c8013fecc81f404beeeaa7cf8492d4ad3d9cc74bdec46e6"
+    },
+    {
+      "source_path": "projects/configs/_base_/models/pointnet2_msg.py",
+      "published_path": "projects/configs/_base_/models/pointnet2_msg.py",
+      "bytes": 1223,
+      "sha256": "a36a53be96d6698a68b88eb9aac2fc9af9288bf3f5e8f1c7fe86aba8eea2ba5d"
+    },
+    {
+      "source_path": "projects/configs/_base_/models/pointnet2_ssg.py",
+      "published_path": "projects/configs/_base_/models/pointnet2_ssg.py",
+      "bytes": 1266,
+      "sha256": "949499445cf609cdc1a2f3fa1e2485b11b7b15b17f57fadd7c535509e8ebaadf"
+    },
+    {
+      "source_path": "projects/configs/_base_/models/smoke.py",
+      "published_path": "projects/configs/_base_/models/smoke.py",
+      "bytes": 1737,
+      "sha256": "4e371c11cd856c95db2ddbbb4c253aaf80e5f02458420194e722401b1427c764"
+    },
+    {
+      "source_path": "projects/configs/_base_/models/votenet.py",
+      "published_path": "projects/configs/_base_/models/votenet.py",
+      "bytes": 2576,
+      "sha256": "c22033142265e9ea0b3154fb131ef1e32834b1363a01802243e6d879a5fd9a6d"
+    },
+    {
+      "source_path": "projects/configs/_base_/schedules/cosine.py",
+      "published_path": "projects/configs/_base_/schedules/cosine.py",
+      "bytes": 536,
+      "sha256": "6ee1342ba6d129a160971e3e963f6f45564fe14b0fafb1e15c2ec5f0b7f4c767"
+    },
+    {
+      "source_path": "projects/configs/_base_/schedules/cyclic_20e.py",
+      "published_path": "projects/configs/_base_/schedules/cyclic_20e.py",
+      "bytes": 797,
+      "sha256": "66cf50b2bbcf06e9b2fe4f2be35f406e45d1d78bef9bea48a73335dd741295e2"
+    },
+    {
+      "source_path": "projects/configs/_base_/schedules/cyclic_40e.py",
+      "published_path": "projects/configs/_base_/schedules/cyclic_40e.py",
+      "bytes": 1573,
+      "sha256": "e267df80f8dd0494cff14f3040410a4e1c631e2d91a6f5d9b82ea130aeb131e3"
+    },
+    {
+      "source_path": "projects/configs/_base_/schedules/mmdet_schedule_1x.py",
+      "published_path": "projects/configs/_base_/schedules/mmdet_schedule_1x.py",
+      "bytes": 319,
+      "sha256": "b2234be7d7e85b929c966c3c938124ac0e674a34207acf638e9a970a7c366c38"
+    },
+    {
+      "source_path": "projects/configs/_base_/schedules/schedule_2x.py",
+      "published_path": "projects/configs/_base_/schedules/schedule_2x.py",
+      "bytes": 459,
+      "sha256": "c56ad1fad25bae260ca483bd7e62a8f2a234de944e025c952d8305e15e48b2fc"
+    },
+    {
+      "source_path": "projects/configs/_base_/schedules/schedule_3x.py",
+      "published_path": "projects/configs/_base_/schedules/schedule_3x.py",
+      "bytes": 399,
+      "sha256": "01bc8ba7aaee522db4475a44c083d89ed2d2b75f67cbca95b397da02e0a791b6"
+    },
+    {
+      "source_path": "projects/configs/_base_/schedules/seg_cosine_100e.py",
+      "published_path": "projects/configs/_base_/schedules/seg_cosine_100e.py",
+      "bytes": 337,
+      "sha256": "3032b109c1132d69ef3a7dcea7b8f2d6dae1f6fc2427baf79488ecadadef92b3"
+    },
+    {
+      "source_path": "projects/configs/_base_/schedules/seg_cosine_150e.py",
+      "published_path": "projects/configs/_base_/schedules/seg_cosine_150e.py",
+      "bytes": 361,
+      "sha256": "e9843bdd077a2f4ca1ada0755dd0967a45e3bca72e4ddd43aad19f78a8abd69a"
+    },
+    {
+      "source_path": "projects/configs/_base_/schedules/seg_cosine_200e.py",
+      "published_path": "projects/configs/_base_/schedules/seg_cosine_200e.py",
+      "bytes": 349,
+      "sha256": "899e241ebd8129ece13c73a12769cb1cd9108627383e509b72e033bff517a630"
+    },
+    {
+      "source_path": "projects/configs/_base_/schedules/seg_cosine_50e.py",
+      "published_path": "projects/configs/_base_/schedules/seg_cosine_50e.py",
+      "bytes": 347,
+      "sha256": "e5aa3d7ee0162b6b40f65bfe3661c861199d8b7b2dfe80891f548ee6fe8f30d0"
+    },
+    {
+      "source_path": "projects/configs/argo/mv2dfusion-fsd_freeze-r50_1536-ep6_argov2.py",
+      "published_path": "projects/configs/argo/mv2dfusion-fsd_freeze-r50_1536-ep6_argov2.py",
+      "bytes": 26693,
+      "sha256": "e1e8e1439b895f1838873d2da8f68fe6299b7ffd90855b7530b31facfb094662"
+    },
+    {
+      "source_path": "projects/configs/nusc/mv2dfusion-fsd_freeze-convnextl_1600_gridmask-ep24_nusc.py",
+      "published_path": "projects/configs/nusc/mv2dfusion-fsd_freeze-convnextl_1600_gridmask-ep24_nusc.py",
+      "bytes": 27433,
+      "sha256": "a1efd1fa22542512cd02529d8b98b95cefecc926a3d742f033c85bf55cc6d84a"
+    },
+    {
+      "source_path": "projects/configs/nusc/mv2dfusion-fsd_freeze-convnextl_1600_gridmask-ep48_trainval_nusc.py",
+      "published_path": "projects/configs/nusc/mv2dfusion-fsd_freeze-convnextl_1600_gridmask-ep48_trainval_nusc.py",
+      "bytes": 23462,
+      "sha256": "bb3b26c70eae69fe648bb6f837d7bbed74ae10d2737023a1f5c672f1e5f7628c"
+    },
+    {
+      "source_path": "projects/configs/nusc/mv2dfusion-fsd_freeze-r50_1600_gridmask-ep24_nusc.py",
+      "published_path": "projects/configs/nusc/mv2dfusion-fsd_freeze-r50_1600_gridmask-ep24_nusc.py",
+      "bytes": 23972,
+      "sha256": "0edd9325b4a87805054853afbcadd76778999f3b894aa7ff2a5fd7ca16fafa88"
+    },
+    {
+      "source_path": "projects/configs/nusc/prototype_finetune_dynamic_wta_sinkhorn_stage2_0725.py",
+      "published_path": "projects/configs/nusc/prototype_finetune_dynamic_wta_sinkhorn_stage2_0725.py",
+      "bytes": 31412,
+      "sha256": "961264a74561427404f00877484a2389c89b06252a28ebb93229fbffce3811a0"
+    },
+    {
+      "source_path": "projects/configs/nusc/prototype_finetune_sinkhorn_stage1_0712_10k.py",
+      "published_path": "projects/configs/nusc/prototype_finetune_sinkhorn_stage1_0712_10k.py",
+      "bytes": 24531,
+      "sha256": "7126340c27bd8c1a48d4fa11150a5b824061aba038d9f670fd199fb4c50ef889"
+    },
+    {
+      "source_path": "projects/configs/nusc/prototype_finetune_sinkhorn_stage1_0723.py",
+      "published_path": "projects/configs/nusc/prototype_finetune_sinkhorn_stage1_0723.py",
+      "bytes": 24776,
+      "sha256": "7d95049440020b17e8c9d97c000e99d58ce4ca9c30e50e8f31dac2098b6b5c2c"
+    },
+    {
+      "source_path": "projects/configs/nusc/prototype_finetune_sinkhorn_stage1_0723_retrain_r50_0819.py",
+      "published_path": "projects/configs/nusc/prototype_finetune_sinkhorn_stage1_0723_retrain_r50_0819.py",
+      "bytes": 24834,
+      "sha256": "cf0cc42fd96fb53eda774cb4bff0145f5bfd6a40d58d4c02ed50918ca4eb035b"
+    },
+    {
+      "source_path": "projects/configs/nusc/prototype_finetune_sinkhorn_stage1_0723_retrain_r50_0819_resume1000.py",
+      "published_path": "projects/configs/nusc/prototype_finetune_sinkhorn_stage1_0723_retrain_r50_0819_resume1000.py",
+      "bytes": 24984,
+      "sha256": "703bde1660b84d4465c91be72561a40e7e9f41bdc84a2f773f8e5fd3982d9fe5"
+    },
+    {
+      "source_path": "projects/configs/nusc/prototype_finetune_sinkhorn_stage1_0723_retrain_r50_0819_test_export.py",
+      "published_path": "projects/configs/nusc/prototype_finetune_sinkhorn_stage1_0723_retrain_r50_0819_test_export.py",
+      "bytes": 24973,
+      "sha256": "ef38c9618d3af63fc224bae2daac90313c4d668df8ef62088b99b53f0d170552"
+    },
+    {
+      "source_path": "projects/configs/nusc/prototype_finetune_sinkhorn_stage2_gradneg_0724.py",
+      "published_path": "projects/configs/nusc/prototype_finetune_sinkhorn_stage2_gradneg_0724.py",
+      "bytes": 25434,
+      "sha256": "ec084e584f54a78ae41c23cd311be5bb7574a7ed0c7bb4dc32261b430d26bc8e"
+    },
+    {
+      "source_path": "projects/configs/nusc/prototype_finetune_sinkhorn_stage2_gradneg_0726.py",
+      "published_path": "projects/configs/nusc/prototype_finetune_sinkhorn_stage2_gradneg_0726.py",
+      "bytes": 25491,
+      "sha256": "60b6cfdeb04a6e66e270a2c1cb02e618017b4b7aeea925e34e8023ed85fef864"
+    },
+    {
+      "source_path": "projects/configs/nusc/prototype_finetune_sinkhorn_stage2_gradneg_0726_before_cap015.py",
+      "published_path": "projects/configs/nusc/prototype_finetune_sinkhorn_stage2_gradneg_0726_before_cap015.py",
+      "bytes": 25482,
+      "sha256": "9b227673de0de2f566c580152941a48b41894b07d3d412d87734d38bdd3f8291"
+    },
+    {
+      "source_path": "projects/configs/nusc/prototype_finetune_sinkhorn_stage2_gradneg_0726_cap015_untrained.py",
+      "published_path": "projects/configs/nusc/prototype_finetune_sinkhorn_stage2_gradneg_0726_cap015_untrained.py",
+      "bytes": 25491,
+      "sha256": "88f4657d4b7c6ea6dc6668d39a3efb15d59ebb14a57fda716ffd1d3145178dc5"
+    },
+    {
+      "source_path": "projects/configs/nusc/prototype_finetune_sinkhorn_stage2_gradneg_0726_from0819_iter5000_0820.py",
+      "published_path": "projects/configs/nusc/prototype_finetune_sinkhorn_stage2_gradneg_0726_from0819_iter5000_0820.py",
+      "bytes": 25569,
+      "sha256": "1b4e7c5374e52a4c96933bd8a50a142f2e03facc49990efa6c2c8b275e13573e"
+    },
+    {
+      "source_path": "projects/configs/nusc/prototype_finetune_sinkhorn_stage2_gradneg_0726_from0819_iter5000_0820_smoke.py",
+      "published_path": "projects/configs/nusc/prototype_finetune_sinkhorn_stage2_gradneg_0726_from0819_iter5000_0820_smoke.py",
+      "bytes": 25505,
+      "sha256": "09e1501fcf1541063d0e8fd7355308c1d2287d2b2cfb00aba9de55f910b5119c"
+    },
+    {
+      "source_path": "projects/configs/nusc/prototype_finetune_sinkhorn_stage2_gradneg_cap010_resume13000_0726.py",
+      "published_path": "projects/configs/nusc/prototype_finetune_sinkhorn_stage2_gradneg_cap010_resume13000_0726.py",
+      "bytes": 25567,
+      "sha256": "749bb5c2cf92095dfeee6c58f8016244f6fa195439a6abc17043b1d1b07cc4c3"
+    },
+    {
+      "source_path": "projects/configs/nusc/prototype_finetune_wta_stage2_0716.py",
+      "published_path": "projects/configs/nusc/prototype_finetune_wta_stage2_0716.py",
+      "bytes": 25067,
+      "sha256": "e259ea0c08cb6760b0a002ed75f3a7fbb4a724fcf49cd0652a9a3a298ef26ced"
+    },
+    {
+      "source_path": "projects/configs/nusc/prototype_finetune_wta_stage3_0718.py",
+      "published_path": "projects/configs/nusc/prototype_finetune_wta_stage3_0718.py",
+      "bytes": 25904,
+      "sha256": "bce5fb92e7e41300be28aaa8b6cc38bf1e7fa98ae3b44a04ff7af3af6dcae47e"
+    },
+    {
+      "source_path": "projects/configs/nusc/prototype_mv2dfusion-fsd_freeze-r50_1600_gridmask-ep24_nusc.py",
+      "published_path": "projects/configs/nusc/prototype_mv2dfusion-fsd_freeze-r50_1600_gridmask-ep24_nusc.py",
+      "bytes": 24901,
+      "sha256": "63d0bbe22c0132dae232ac1eb6b29cee4cba9aa017c6a738b2b5ca24b028987e"
+    },
+    {
+      "source_path": "projects/configs/nusc/prototype_stage1_r50_labeled6000_0920.py",
+      "published_path": "projects/configs/nusc/prototype_stage1_r50_labeled6000_0920.py",
+      "bytes": 1593,
+      "sha256": "677f718001b8613eaa2aae17c9667214092ae212f79f67798f8a8c756eb2a910"
+    },
+    {
+      "source_path": "projects/configs/nusc/prototype_stage1_r50_labeled6000_0920_export.py",
+      "published_path": "projects/configs/nusc/prototype_stage1_r50_labeled6000_0920_export.py",
+      "bytes": 714,
+      "sha256": "0c78d548bffb649906f9d11bbde9cca5f5704b5cf500da7629fa4b6906f0b5ff"
+    },
+    {
+      "source_path": "projects/configs/nusc/prototype_stage1_r50_labeled6000_10cls_0923.py",
+      "published_path": "projects/configs/nusc/prototype_stage1_r50_labeled6000_10cls_0923.py",
+      "bytes": 1709,
+      "sha256": "73e9679256647c2b2745bee91a28a4d7e0b3fb5d6875b3173028661afc9e3421"
+    },
+    {
+      "source_path": "projects/configs/nusc/prototype_stage1_r50_labeled6000_10cls_0923_export_fixed.py",
+      "published_path": "projects/configs/nusc/prototype_stage1_r50_labeled6000_10cls_0923_export_fixed.py",
+      "bytes": 663,
+      "sha256": "9101b180f8af4b11c778e1ffe8c93bea3f804706ff94608c23da90586c1d6848"
+    },
+    {
+      "source_path": "projects/configs/nusc/prototype_stage2_labeled6000_10cls_20261025.py",
+      "published_path": "projects/configs/nusc/prototype_stage2_labeled6000_10cls_20261025.py",
+      "bytes": 2518,
+      "sha256": "b01b7129abcc91d46bca7e6139229067358b6436ba67a8873e7ff8dadde4696c"
+    },
+    {
+      "source_path": "projects/configs/nusc/ssl_offline_r50_labeled_stage0_0914.py",
+      "published_path": "projects/configs/nusc/ssl_offline_r50_labeled_stage0_0914.py",
+      "bytes": 1257,
+      "sha256": "d6779988a5f3b35c2602dd40286be87ca82a63c52207b6d5ed08762dcf0b85ee"
+    },
+    {
+      "source_path": "projects/configs/nusc/ssl_online_r50_ema_1011.py",
+      "published_path": "projects/configs/nusc/ssl_online_r50_ema_1011.py",
+      "bytes": 1020,
+      "sha256": "d23f1cea4bf898ca9cb37bebb81a88149293c28e3575450025c048666cdb2785"
+    },
+    {
+      "source_path": "projects/configs/nusc/ssl_online_r50_ema_aug_2026_10_14.py",
+      "published_path": "projects/configs/nusc/ssl_online_r50_ema_aug_2026_10_14.py",
+      "bytes": 1326,
+      "sha256": "0593f4adbd65a86734d7ce4178c484d863f1dd66095a3204ed026db05c455f2a"
+    },
+    {
+      "source_path": "projects/configs/nusc/ssl_online_r50_ema_aug_global_2026_10_19.py",
+      "published_path": "projects/configs/nusc/ssl_online_r50_ema_aug_global_2026_10_19.py",
+      "bytes": 1119,
+      "sha256": "216d6ad1453bcf06cbb7e6928f3b800a9b8a8b8a1aa4f0a36537b85b32d4a246"
+    },
+    {
+      "source_path": "projects/configs/nusc/ssl_online_r50_ema_aug_global_before_score02_2026_10_19.py",
+      "published_path": "projects/configs/nusc/ssl_online_r50_ema_aug_global_before_score02_2026_10_19.py",
+      "bytes": 1046,
+      "sha256": "8e0bd832318d9512a38592424c3b372fb1ff62e3fdac1a6acd0ddda2867a959d"
+    },
+    {
+      "source_path": "projects/configs/nusc/ssl_online_r50_ema_aug_global_v2_2026_10_14.py",
+      "published_path": "projects/configs/nusc/ssl_online_r50_ema_aug_global_v2_2026_10_14.py",
+      "bytes": 706,
+      "sha256": "26c7ebfc728cd42c04028ce656357592986f9ec3babb22c00a8691828eef8487"
+    },
+    {
+      "source_path": "projects/configs/nusc/ssl_online_r50_ema_aug_target_v2_2026_10_14.py",
+      "published_path": "projects/configs/nusc/ssl_online_r50_ema_aug_target_v2_2026_10_14.py",
+      "bytes": 518,
+      "sha256": "0a8bc16ddaa1f2193bedae8eb8dd070af93e76bda7cbc548a2ed1b07c20180ce"
+    },
+    {
+      "source_path": "projects/configs/nusc/ssl_online_r50_fixed_teacher_0919.py",
+      "published_path": "projects/configs/nusc/ssl_online_r50_fixed_teacher_0919.py",
+      "bytes": 1981,
+      "sha256": "bca1db33466d8a354384ea0ad61daae1955a53bd2f3f15ae4fc9477bd3c12b94"
+    },
+    {
+      "source_path": "projects/fsdv2/__init__.py",
+      "published_path": "projects/fsdv2/__init__.py",
+      "bytes": 454,
+      "sha256": "34b625187e4dca53646dc9d709c1ece0fc5c90ebcdc443d19064bb5d0003d963"
+    },
+    {
+      "source_path": "projects/fsdv2/fsd_v2_head.py",
+      "published_path": "projects/fsdv2/fsd_v2_head.py",
+      "bytes": 21913,
+      "sha256": "c79a767b9a0bc1b6727f86a2aa631b0a4a2ada7b424953d1260d97a15d530d92"
+    },
+    {
+      "source_path": "projects/fsdv2/loss_utils.py",
+      "published_path": "projects/fsdv2/loss_utils.py",
+      "bytes": 18172,
+      "sha256": "ef77d0f78ebb7b970e8b4d60c83c5976c7aa68821d1b86787c726eb62a4e9521"
+    },
+    {
+      "source_path": "projects/fsdv2/segmentation_head.py",
+      "published_path": "projects/fsdv2/segmentation_head.py",
+      "bytes": 10919,
+      "sha256": "8dc0af88266f3e78f20ba8a45d3f9b231bbd628e7a2bf61da0b6f5b11d91a2d9"
+    },
+    {
+      "source_path": "projects/fsdv2/single_stage_fsd.py",
+      "published_path": "projects/fsdv2/single_stage_fsd.py",
+      "bytes": 48443,
+      "sha256": "5a7137dbfb0efcd80202cccfc4e3fada5458d32423ead9a51ef5ffb4101c7347"
+    },
+    {
+      "source_path": "projects/fsdv2/single_stage_fsd_v2.py",
+      "published_path": "projects/fsdv2/single_stage_fsd_v2.py",
+      "bytes": 41038,
+      "sha256": "d37bc16999a54aabed76f5c6db9a964a774d078cb44a9b26d6e6d74fccbce15e"
+    },
+    {
+      "source_path": "projects/fsdv2/sparse_cluster_head.py",
+      "published_path": "projects/fsdv2/sparse_cluster_head.py",
+      "bytes": 22944,
+      "sha256": "a0991414a2363c592458725cf2850e025e72b2430dd3bf434dbe458513a7bbcc"
+    },
+    {
+      "source_path": "projects/fsdv2/sparse_unet.py",
+      "published_path": "projects/fsdv2/sparse_unet.py",
+      "bytes": 25912,
+      "sha256": "fd4d9555d745026c952b41557f0fa3698f12ae624a45b271fb8a967a18960d1f"
+    },
+    {
+      "source_path": "projects/fsdv2/sst_input_layer_v2.py",
+      "published_path": "projects/fsdv2/sst_input_layer_v2.py",
+      "bytes": 1240,
+      "sha256": "2bf18e45162d129ca2de6eaee78cab1db2ebe3625a2f89aa0f2f51e4f75440aa"
+    },
+    {
+      "source_path": "projects/fsdv2/utils.py",
+      "published_path": "projects/fsdv2/utils.py",
+      "bytes": 10390,
+      "sha256": "e570f5979c87d62363d929589c2a81b7951e3785e011c2740f4edf981af67c17"
+    },
+    {
+      "source_path": "projects/fsdv2/voxel2point_neck.py",
+      "published_path": "projects/fsdv2/voxel2point_neck.py",
+      "bytes": 2659,
+      "sha256": "93a75cc608de9504a94dbfaf1d3bda6cdcfcbb56977fc3c9bdb6caa3bed1bc3e"
+    },
+    {
+      "source_path": "projects/fsdv2/voxel_encoder.py",
+      "published_path": "projects/fsdv2/voxel_encoder.py",
+      "bytes": 15523,
+      "sha256": "d3cc8bee78b387e96885a7440558069d3202dcff1e9902d5fafe7e6f492e67ec"
+    },
+    {
+      "source_path": "projects/fsdv2/ops/__init__.py",
+      "published_path": "projects/fsdv2/ops/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source_path": "projects/fsdv2/ops/sst/sst_ops.py",
+      "published_path": "projects/fsdv2/ops/sst/sst_ops.py",
+      "bytes": 14249,
+      "sha256": "406ff99445d3f5c01247029356e50da94890d3c332cde021ca41457df22f8cd8"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/__init__.py",
+      "published_path": "projects/mmdet3d_plugin/__init__.py",
+      "bytes": 425,
+      "sha256": "f3f9c9603f209572ce7fc54685a1090570b81e4099bfabdb283a30a6f5b8ef4a"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/core/apis/__init__.py",
+      "published_path": "projects/mmdet3d_plugin/core/apis/__init__.py",
+      "bytes": 124,
+      "sha256": "7a209c53952b6058fb83f16b472652b78f9facd420f5df15edc229e648b87b34"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/core/apis/mmdet_train.py",
+      "published_path": "projects/mmdet3d_plugin/core/apis/mmdet_train.py",
+      "bytes": 8022,
+      "sha256": "8e094c2cbe4655d3078b64e270193461c51c3327d24966cfab84c909883105e8"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/core/apis/test.py",
+      "published_path": "projects/mmdet3d_plugin/core/apis/test.py",
+      "bytes": 6332,
+      "sha256": "276b64759f7a3a9473ccc1ff6cc7713f4d3bfc8860eea42d2f51983c20ce2eef"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/core/apis/train.py",
+      "published_path": "projects/mmdet3d_plugin/core/apis/train.py",
+      "bytes": 2038,
+      "sha256": "073ffdcd997fe5d2a5154d9751d65be2f0adcd4f1ec62c0cf3966b2bc7e4870a"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/core/bbox/util.py",
+      "published_path": "projects/mmdet3d_plugin/core/bbox/util.py",
+      "bytes": 1465,
+      "sha256": "bd6adc0aca4d3670246c51d26a847e36afe8fa3d8270ea8ab5930998c8f58ed5"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/core/bbox/assigners/__init__.py",
+      "published_path": "projects/mmdet3d_plugin/core/bbox/assigners/__init__.py",
+      "bytes": 166,
+      "sha256": "cd7479914d2af80e64f69aebfc4841f8467b9e685805f1fecf2de679aa6b18b0"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/core/bbox/assigners/hungarian_assigner_2d.py",
+      "published_path": "projects/mmdet3d_plugin/core/bbox/assigners/hungarian_assigner_2d.py",
+      "bytes": 7290,
+      "sha256": "c1d63671fcbb209ef85c2ee2b812ac7dea6fcb98edb2ce764ec5df3737f265d0"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/core/bbox/assigners/hungarian_assigner_3d.py",
+      "published_path": "projects/mmdet3d_plugin/core/bbox/assigners/hungarian_assigner_3d.py",
+      "bytes": 6134,
+      "sha256": "62c3e12cd7bbbfbfe5e4b392eafb754279af016cc83aaf05913dda1ca803556e"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/core/bbox/coders/__init__.py",
+      "published_path": "projects/mmdet3d_plugin/core/bbox/coders/__init__.py",
+      "bytes": 68,
+      "sha256": "32905361de28ea2eeea43d56c08bbbda6b38237f53422f4ff6bab7638927a46e"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/core/bbox/coders/nms_free_coder.py",
+      "published_path": "projects/mmdet3d_plugin/core/bbox/coders/nms_free_coder.py",
+      "bytes": 8231,
+      "sha256": "d7922da3e52b1b3c29f6f1cdb7bce5598807f72f47b8c337c1b9dda8274ecc8c"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/core/bbox/match_costs/__init__.py",
+      "published_path": "projects/mmdet3d_plugin/core/bbox/match_costs/__init__.py",
+      "bytes": 141,
+      "sha256": "40ac90fcc6638f6efcddb38be08aec3504ba326a302366e94b2959796185c1b3"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/core/bbox/match_costs/match_cost.py",
+      "published_path": "projects/mmdet3d_plugin/core/bbox/match_costs/match_cost.py",
+      "bytes": 853,
+      "sha256": "7bdc0c9db3027284334ad3e37072e57f4f532a476dc0ae2c0a316a147904475d"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/core/evaluation/__init__.py",
+      "published_path": "projects/mmdet3d_plugin/core/evaluation/__init__.py",
+      "bytes": 42,
+      "sha256": "f2bf99095c9fe232bde6c2e26dd94097dfbc6f6407270e31d72b669a828a5c05"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/core/evaluation/eval_hooks.py",
+      "published_path": "projects/mmdet3d_plugin/core/evaluation/eval_hooks.py",
+      "bytes": 3507,
+      "sha256": "1459d912886660fb352b6ad1ca6bf6d7d3b1ab0168c6805fc360ccf4bb215a4f"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/core/evaluation/eval_mot.py",
+      "published_path": "projects/mmdet3d_plugin/core/evaluation/eval_mot.py",
+      "bytes": 9838,
+      "sha256": "e1968a120afe4d367f64e121ec7dce89a0ee6f3289a8e4a3c3b6d960acf122f3"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/core/hook/__init__.py",
+      "published_path": "projects/mmdet3d_plugin/core/hook/__init__.py",
+      "bytes": 26,
+      "sha256": "6aac8934e117fe0c91044e6ec9917340f28a03749ac8c096aab0e79e675064d5"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/core/hook/custom_hook.py",
+      "published_path": "projects/mmdet3d_plugin/core/hook/custom_hook.py",
+      "bytes": 147,
+      "sha256": "bc7ce4c22d1e252732cfc092dca4be1e3ca16429f53bf690dc973863a3e27584"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/datasets/__init__.py",
+      "published_path": "projects/mmdet3d_plugin/datasets/__init__.py",
+      "bytes": 190,
+      "sha256": "8d23a2e628c22125dd489a04afe1858c0aec4a0aa4477a103ffefa06843230f0"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/datasets/argoverse2_dataset.py",
+      "published_path": "projects/mmdet3d_plugin/datasets/argoverse2_dataset.py",
+      "bytes": 12987,
+      "sha256": "7254a1b4854e0504688254ee6032705f28aa38953ae93a8fbdb4060230483f0d"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/datasets/argoverse2_dataset_t.py",
+      "published_path": "projects/mmdet3d_plugin/datasets/argoverse2_dataset_t.py",
+      "bytes": 14435,
+      "sha256": "8fdc27d74a5f08af95e4ab31c9fafd4d239436ac6a871ec1751aa1797a0415e8"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/datasets/av2_eval_util.py",
+      "published_path": "projects/mmdet3d_plugin/datasets/av2_eval_util.py",
+      "bytes": 15586,
+      "sha256": "1b1bf81ba5b603d2613da19f1a16e7ecedcf75e4eb0f63025b29c2cbe9d168f0"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/datasets/av2_utils.py",
+      "published_path": "projects/mmdet3d_plugin/datasets/av2_utils.py",
+      "bytes": 10727,
+      "sha256": "2e8200272924a87293d7c72c11288258917730bb174d858e2cd8d53556725ece"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/datasets/builder.py",
+      "published_path": "projects/mmdet3d_plugin/datasets/builder.py",
+      "bytes": 6946,
+      "sha256": "ad0685217125a63b4aaf5fa41b2fc7251c96884f520a96c6f8290093807c0c9d"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/datasets/nuscenes_dataset.py",
+      "published_path": "projects/mmdet3d_plugin/datasets/nuscenes_dataset.py",
+      "bytes": 20820,
+      "sha256": "e7ab754094e8babac7e7ae9d83eb15ab3bf8fd7051c0a9b9cdbe74d9ca70275c"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/datasets/online_nuscenes_dataset_0919.py",
+      "published_path": "projects/mmdet3d_plugin/datasets/online_nuscenes_dataset_0919.py",
+      "bytes": 1848,
+      "sha256": "f03106696b79756de68a30c0381a002a14b50a7e72ee50b465ebd3a5dca987bf"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/datasets/pseudo_nuscenes_dataset_0915.py",
+      "published_path": "projects/mmdet3d_plugin/datasets/pseudo_nuscenes_dataset_0915.py",
+      "bytes": 7435,
+      "sha256": "03fce4bd702f8d9a007e3399ca510bd32f08d1c426836d7bfdcdd84eafff848c"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/datasets/summarize_metrics_av2.py",
+      "published_path": "projects/mmdet3d_plugin/datasets/summarize_metrics_av2.py",
+      "bytes": 7184,
+      "sha256": "d8ba4305752f0b67f6a78c4ecc9fd0a9d5e2bd78c965bcffaaed2c12186a1406"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/datasets/pipelines/__init__.py",
+      "published_path": "projects/mmdet3d_plugin/datasets/pipelines/__init__.py",
+      "bytes": 191,
+      "sha256": "8f3d46f8f9c81158efe84b624833966ad208e0bf3ac561027179b0d4f38b9d69"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/datasets/pipelines/formating.py",
+      "published_path": "projects/mmdet3d_plugin/datasets/pipelines/formating.py",
+      "bytes": 6398,
+      "sha256": "0d5aebbd12e135966119327632e1412db29e47b72973902e98b298f2f6ffc1d0"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/datasets/pipelines/transform_3d.py",
+      "published_path": "projects/mmdet3d_plugin/datasets/pipelines/transform_3d.py",
+      "bytes": 41661,
+      "sha256": "f09bdcc58829bfd9e153acad8c32589767767b44108f9c679a87770ca3a0cd32"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/datasets/samplers/__init__.py",
+      "published_path": "projects/mmdet3d_plugin/datasets/samplers/__init__.py",
+      "bytes": 187,
+      "sha256": "876e3903040fe619fe89651c659b1564a0438bac6535196ac9ca8309ced23be4"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/datasets/samplers/distributed_sampler.py",
+      "published_path": "projects/mmdet3d_plugin/datasets/samplers/distributed_sampler.py",
+      "bytes": 1661,
+      "sha256": "7f7537d43df5d4b7a59df59064d8e32751e057d7ef61c8e64ea1f859d3e7bac7"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/datasets/samplers/group_sampler.py",
+      "published_path": "projects/mmdet3d_plugin/datasets/samplers/group_sampler.py",
+      "bytes": 8922,
+      "sha256": "6e20648b2c48e38856710b7108b2aebe78570cb026d1564243bd4be0ac106eba"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/datasets/samplers/sampler.py",
+      "published_path": "projects/mmdet3d_plugin/datasets/samplers/sampler.py",
+      "bytes": 487,
+      "sha256": "d697a3314b2be1ec00f40db37e260c0e506f750e9420a58de4fafbfb7c23dde9"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/__init__.py",
+      "published_path": "projects/mmdet3d_plugin/models/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/builder.py",
+      "published_path": "projects/mmdet3d_plugin/models/builder.py",
+      "bytes": 262,
+      "sha256": "819eee0fa1f8008bbe85fd8c154f79eed671bd75b43411af1a3ca64b53335fd9"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/backbones/__init__.py",
+      "published_path": "projects/mmdet3d_plugin/models/backbones/__init__.py",
+      "bytes": 406,
+      "sha256": "6727ea521a8e3b7deb4c65acdd6b49a5da61b43a8c05226b1023d0411cb6551c"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/backbones/convnext.py",
+      "published_path": "projects/mmdet3d_plugin/models/backbones/convnext.py",
+      "bytes": 26339,
+      "sha256": "7a8ec906c1bf207d6e50db9ec9269290ed4fe0bc443badd57711ac428d38c139"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/dense_heads/MV2D_one_stage.py",
+      "published_path": "projects/mmdet3d_plugin/models/dense_heads/MV2D_one_stage.py",
+      "bytes": 27518,
+      "sha256": "7dcca65db204dbe9377a6847278d627d025ff5601589f17d5c3820f1c7a51918"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/dense_heads/README.md",
+      "published_path": "projects/mmdet3d_plugin/models/dense_heads/README.md",
+      "bytes": 3506,
+      "sha256": "375b4351dac65ccb669226a5a91613ca26f89481fd0b19624cde95e177f563c5"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/dense_heads/__init__.py",
+      "published_path": "projects/mmdet3d_plugin/models/dense_heads/__init__.py",
+      "bytes": 96,
+      "sha256": "292b270790c76857e978530775869cb7e56049272747f21b565bd66f6b0b9443"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/dense_heads/contrast.py",
+      "published_path": "projects/mmdet3d_plugin/models/dense_heads/contrast.py",
+      "bytes": 1045,
+      "sha256": "b68550d0419f6a8a50dc15f2a655373bf98b505be4797058b974bd5117bdb4e4"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/dense_heads/mv2dfusion_head.py",
+      "published_path": "projects/mmdet3d_plugin/models/dense_heads/mv2dfusion_head.py",
+      "bytes": 59180,
+      "sha256": "49b43991626e9a80da4e9f45ee95945e738008f65197ed7bf6bae69b5cd5d04e"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/dense_heads/one_stage_test.py",
+      "published_path": "projects/mmdet3d_plugin/models/dense_heads/one_stage_test.py",
+      "bytes": 28002,
+      "sha256": "dea57db86c70ac940e66edc567c14f37145174dba097acec0ade3584a4161e16"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/dense_heads/prototype_stage1_head_0920.py",
+      "published_path": "projects/mmdet3d_plugin/models/dense_heads/prototype_stage1_head_0920.py",
+      "bytes": 53409,
+      "sha256": "ab2b3cee530e2649c4e1d1201c7e051bdacbaf6699ae0b4e709b1a3383a20cd8"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/dense_heads/prototype_stage2_adaptive_head_20261023.py",
+      "published_path": "projects/mmdet3d_plugin/models/dense_heads/prototype_stage2_adaptive_head_20261023.py",
+      "bytes": 27598,
+      "sha256": "e65c76f635018f50b94ce421006d47f803167afcf9a054c96daab833ccb382c0"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/dense_heads/sinkhorn.py",
+      "published_path": "projects/mmdet3d_plugin/models/dense_heads/sinkhorn.py",
+      "bytes": 2319,
+      "sha256": "37d1622ae0dfc9e18cc32dc0c7b09fb412f4e180726d072d85bb616a487037e9"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/dense_heads/sinkhorn_balanced_0712.py",
+      "published_path": "projects/mmdet3d_plugin/models/dense_heads/sinkhorn_balanced_0712.py",
+      "bytes": 1237,
+      "sha256": "adf68abdb67fb9a61c5d740ec4b571e489a1950b9ac8afdd0ece5ca2af752800"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/dense_heads/backups/MV2D_one_stage_before_0726_0820.py",
+      "published_path": "projects/mmdet3d_plugin/models/dense_heads/backups/MV2D_one_stage_before_0726_0820.py",
+      "bytes": 27385,
+      "sha256": "f631536c8fce311894ce30754713b57839828b1086c66e33a515026a8c033947"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/dense_heads/backups/MV2D_one_stage_before_test_0819.py",
+      "published_path": "projects/mmdet3d_plugin/models/dense_heads/backups/MV2D_one_stage_before_test_0819.py",
+      "bytes": 53391,
+      "sha256": "9c40d2c804df4123b8ab1444d2564ea39e27ddb82e81f4073586dcdf6e8a8674"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/dense_heads/train_versions/now_one_stage_0712.py",
+      "published_path": "projects/mmdet3d_plugin/models/dense_heads/train_versions/now_one_stage_0712.py",
+      "bytes": 47512,
+      "sha256": "c66c374c4066e09600e39084028886d8f807e53b3bf2eb88b1da233f9fd546e3"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/dense_heads/train_versions/now_one_stage_0716.py",
+      "published_path": "projects/mmdet3d_plugin/models/dense_heads/train_versions/now_one_stage_0716.py",
+      "bytes": 63177,
+      "sha256": "f59ce63896a16dc7039951cb481ec4cf61b9bdb50b4531b0b38686141fd69f6a"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/dense_heads/train_versions/now_one_stage_0718.py",
+      "published_path": "projects/mmdet3d_plugin/models/dense_heads/train_versions/now_one_stage_0718.py",
+      "bytes": 80884,
+      "sha256": "61a26a5e3bd114515c15483cb8ad58a49cb42c7c1343c7d8dd7e3cf05313a2b8"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/dense_heads/train_versions/now_one_stage_0723.py",
+      "published_path": "projects/mmdet3d_plugin/models/dense_heads/train_versions/now_one_stage_0723.py",
+      "bytes": 53241,
+      "sha256": "d04813623df624aee29410005b49316e41aad99961ad7d46e8d8c6d0b34b01a3"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/dense_heads/train_versions/now_one_stage_0724.py",
+      "published_path": "projects/mmdet3d_plugin/models/dense_heads/train_versions/now_one_stage_0724.py",
+      "bytes": 69935,
+      "sha256": "ece1ba22332f533c4d70ec4b880188e5473bac0cca1a6143a01596ae56ec48de"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/dense_heads/train_versions/now_one_stage_0725.py",
+      "published_path": "projects/mmdet3d_plugin/models/dense_heads/train_versions/now_one_stage_0725.py",
+      "bytes": 98749,
+      "sha256": "4f6a807a1181b5f79d631807cffff3224cca74d5c042ab6ae4582799e2d14678"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/dense_heads/train_versions/now_one_stage_0726.py",
+      "published_path": "projects/mmdet3d_plugin/models/dense_heads/train_versions/now_one_stage_0726.py",
+      "bytes": 72590,
+      "sha256": "9a1fe52a0bf0a75354e05a942c536705757c4a6841fbf71f03b4a415330b8af9"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/dense_heads/train_versions/now_one_stage_0726_before_cap015.py",
+      "published_path": "projects/mmdet3d_plugin/models/dense_heads/train_versions/now_one_stage_0726_before_cap015.py",
+      "bytes": 72590,
+      "sha256": "6a5018a3b72105660b16c07738ed27390137adda6b2f5406c865152a07662f17"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/dense_heads/train_versions/now_one_stage_0726_cap015_untrained.py",
+      "published_path": "projects/mmdet3d_plugin/models/dense_heads/train_versions/now_one_stage_0726_cap015_untrained.py",
+      "bytes": 72590,
+      "sha256": "66dc3742458667800a0425d200e8deaa6c0782ab275896cb2c8cb6dbd31b045b"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/dense_heads/train_versions/now_one_stage_0819.py",
+      "published_path": "projects/mmdet3d_plugin/models/dense_heads/train_versions/now_one_stage_0819.py",
+      "bytes": 53391,
+      "sha256": "9c40d2c804df4123b8ab1444d2564ea39e27ddb82e81f4073586dcdf6e8a8674"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/dense_heads/train_versions/now_one_stage_0820.py",
+      "published_path": "projects/mmdet3d_plugin/models/dense_heads/train_versions/now_one_stage_0820.py",
+      "bytes": 72746,
+      "sha256": "8f4619c6f7627a424db865e5be6d281ec481af9bce8ee0e9e19e623b93322167"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/detectors/__init__.py",
+      "published_path": "projects/mmdet3d_plugin/models/detectors/__init__.py",
+      "bytes": 116,
+      "sha256": "611913e8346e87c3eb5d96d1e6fac7cfc8b600138eb106e95a32d3152fa213f1"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/detectors/detector_wrapper.py",
+      "published_path": "projects/mmdet3d_plugin/models/detectors/detector_wrapper.py",
+      "bytes": 5095,
+      "sha256": "0e03c2471de47f9fc4d9553cd6b70a964a440b7727cd30724414639a0740d6c1"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/detectors/mv2dfusion.py",
+      "published_path": "projects/mmdet3d_plugin/models/detectors/mv2dfusion.py",
+      "bytes": 33567,
+      "sha256": "6b6a6e59b36defbd177d8953b4dab19843b74311c1bde31ff5d3688916402172"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/detectors/mv2dfusion_offline_ssl_0915.py",
+      "published_path": "projects/mmdet3d_plugin/models/detectors/mv2dfusion_offline_ssl_0915.py",
+      "bytes": 6639,
+      "sha256": "7dd2045587fd5b1a9eb3cf698baf3796c362f6d6435e03abe9f17cf0407aa41e"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/detectors/mv2dfusion_online_ema_1011.py",
+      "published_path": "projects/mmdet3d_plugin/models/detectors/mv2dfusion_online_ema_1011.py",
+      "bytes": 3305,
+      "sha256": "405755ef787d341c9c46facfa11e28e838b6af37d9e6c72eb80f09b6c37fa911"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/detectors/mv2dfusion_online_ema_aug_2026_10_14.py",
+      "published_path": "projects/mmdet3d_plugin/models/detectors/mv2dfusion_online_ema_aug_2026_10_14.py",
+      "bytes": 3643,
+      "sha256": "d43ceb024abdb6a562f9daa504eed3d535033bc43d1b19e91a6013f55da58760"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/detectors/mv2dfusion_online_ema_aug_ab_v2_2026_10_14.py",
+      "published_path": "projects/mmdet3d_plugin/models/detectors/mv2dfusion_online_ema_aug_ab_v2_2026_10_14.py",
+      "bytes": 723,
+      "sha256": "89f8013fc4a4a3a86358c01ac2564079eefa36dca497ade65e285c89ef59075c"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/detectors/mv2dfusion_online_ssl_0919.py",
+      "published_path": "projects/mmdet3d_plugin/models/detectors/mv2dfusion_online_ssl_0919.py",
+      "bytes": 7297,
+      "sha256": "99ab27d460326b3d53c7a3389981562038b2e62f7a0d18685fc4e61619bb10c1"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/detectors/prototype_only_detector_0920.py",
+      "published_path": "projects/mmdet3d_plugin/models/detectors/prototype_only_detector_0920.py",
+      "bytes": 2824,
+      "sha256": "0dbb5cb098d689976df762cba6937fe320c9934e50f4e7ce85ea25ba2c38bb96"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/detectors/prototype_only_stage2_20261025.py",
+      "published_path": "projects/mmdet3d_plugin/models/detectors/prototype_only_stage2_20261025.py",
+      "bytes": 2594,
+      "sha256": "29d021533c38d3f7ca419768b4e182c29c3bfdf0267dc5e4825d36d2f11e243d"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/query_generators/__init__.py",
+      "published_path": "projects/mmdet3d_plugin/models/query_generators/__init__.py",
+      "bytes": 145,
+      "sha256": "b8cb4f660fa112dd6cf15e46eef7580b220aaa3e0324bc2708f0756617fdba84"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/query_generators/image_distribution_query_generator.py",
+      "published_path": "projects/mmdet3d_plugin/models/query_generators/image_distribution_query_generator.py",
+      "bytes": 11927,
+      "sha256": "97d98a83e3577f88c38706c47d9be13d8e070200b82629361788a9d606f12816"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/query_generators/image_singple_point_query_generator.py",
+      "published_path": "projects/mmdet3d_plugin/models/query_generators/image_singple_point_query_generator.py",
+      "bytes": 17731,
+      "sha256": "765b05e1e5234f2817e4611ebf76bba48d8f1b4498a2f4b810c9dd0bc04ca60f"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/query_generators/point_cloud_query_generator.py",
+      "published_path": "projects/mmdet3d_plugin/models/query_generators/point_cloud_query_generator.py",
+      "bytes": 6359,
+      "sha256": "3603999eb72b36b8af66f95d885b35f2e39541f33b85e737f0eaa5751bccb8ec"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/utils/__init__.py",
+      "published_path": "projects/mmdet3d_plugin/models/utils/__init__.py",
+      "bytes": 57,
+      "sha256": "65cea1c7e66a71fc58e281e7e2f211f87a4139adf6e7571bf9dfd2eb203cd87f"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/utils/attention.py",
+      "published_path": "projects/mmdet3d_plugin/models/utils/attention.py",
+      "bytes": 6411,
+      "sha256": "2d1e63c36ee9922108e487470e9ba96b2d28a2f66419c492cc94da9a50af0760"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/utils/grid_mask.py",
+      "published_path": "projects/mmdet3d_plugin/models/utils/grid_mask.py",
+      "bytes": 3825,
+      "sha256": "d086cdcc4f5c9ee156ddf0ff74404b5202d8b0e198b7968b83be754233e373d3"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/utils/misc.py",
+      "published_path": "projects/mmdet3d_plugin/models/utils/misc.py",
+      "bytes": 7283,
+      "sha256": "c90f21d9e6fb0010f38037673c7021e0a0d4e0730325be5844ee4f592cdb3eb0"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/utils/mv2dfusion_transformer.py",
+      "published_path": "projects/mmdet3d_plugin/models/utils/mv2dfusion_transformer.py",
+      "bytes": 31663,
+      "sha256": "5ad66b055fe9c921778589fb91d3d6a834c11f05de00abeb21bf8611aebe3757"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/utils/positional_encoding.py",
+      "published_path": "projects/mmdet3d_plugin/models/utils/positional_encoding.py",
+      "bytes": 3269,
+      "sha256": "faddf14eb22a1c0dfa2b4679e5e770de17cbb96da2ec9a75653b99cb35557f9d"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/utils/student_augment_2026_10_14.py",
+      "published_path": "projects/mmdet3d_plugin/models/utils/student_augment_2026_10_14.py",
+      "bytes": 12219,
+      "sha256": "0ed47cc2ee5e32c067a9a29fe157030f8036cadcaee426095f2085bea4003ad0"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/models/utils/student_augment_ab_v2_2026_10_14.py",
+      "published_path": "projects/mmdet3d_plugin/models/utils/student_augment_ab_v2_2026_10_14.py",
+      "bytes": 7061,
+      "sha256": "732ef5e3db4042bb0fa03ca8b231d5e533a3809bacf0683179b6127eac7ebc6e"
+    },
+    {
+      "source_path": "projects/mmdet3d_plugin/ops/norm.py",
+      "published_path": "projects/mmdet3d_plugin/ops/norm.py",
+      "bytes": 402,
+      "sha256": "03edfac153b3ef971dc1baf98023303bac8f843f39b286a07d312725b834496c"
+    },
+    {
+      "source_path": "tools/benchmark.py",
+      "published_path": "tools/benchmark.py",
+      "bytes": 4042,
+      "sha256": "e4ca14a1ad191b8783b43fe1aa93aff65e9276d96ae89345683bb9b55c080aa2"
+    },
+    {
+      "source_path": "tools/create_data_nusc.py",
+      "published_path": "tools/create_data_nusc.py",
+      "bytes": 2470,
+      "sha256": "5ef078beb5c20739a578005c1521eb116a7efc04690e2c477cde2dc812a4e947"
+    },
+    {
+      "source_path": "tools/dist_test.sh",
+      "published_path": "tools/dist_test.sh",
+      "bytes": 494,
+      "sha256": "71b73d0aaf7ea549e32f0fd848254e3603f65af5c8873fd07efdaa5844cbc52e"
+    },
+    {
+      "source_path": "tools/dist_train.sh",
+      "published_path": "tools/dist_train.sh",
+      "bytes": 475,
+      "sha256": "a3155519f67b3277d6f375a3175e46a258e4e5dd8da2882169a06fc7cd70840a"
+    },
+    {
+      "source_path": "tools/multi_dist_train.sh",
+      "published_path": "tools/multi_dist_train.sh",
+      "bytes": 1648,
+      "sha256": "9d7d9e3086f288c933969f48c71a90cd95b10b3ae3535dfae7818220a498bec7"
+    },
+    {
+      "source_path": "tools/slurm_test.sh",
+      "published_path": "tools/slurm_test.sh",
+      "bytes": 566,
+      "sha256": "ab388a132b7fe2b448f5b57c6b8d3b5d0504895d3eb648958400d72670ed765c"
+    },
+    {
+      "source_path": "tools/slurm_train.sh",
+      "published_path": "tools/slurm_train.sh",
+      "bytes": 574,
+      "sha256": "4a390e535ebe111367046c1958d778c8834df68a2f1d3ca6902a65b7321e6c07"
+    },
+    {
+      "source_path": "tools/test.py",
+      "published_path": "tools/test.py",
+      "bytes": 11157,
+      "sha256": "d712958767a4b512745d40b12ada1fb6903f06cb10c48ff3fefe7615bcfbdbba"
+    },
+    {
+      "source_path": "tools/test_GT.py",
+      "published_path": "tools/test_GT.py",
+      "bytes": 14013,
+      "sha256": "54db93ee3ad689ff10d100b9198162e03ed7a7c6a533f52a504594ff2b55f0f8"
+    },
+    {
+      "source_path": "tools/train.py",
+      "published_path": "tools/train.py",
+      "bytes": 11453,
+      "sha256": "4c45ac19f2f3535bb726022c253065528cf28004adcbff6fabe2587560586cc3"
+    },
+    {
+      "source_path": "tools/train_freeze_all.py",
+      "published_path": "tools/train_freeze_all.py",
+      "bytes": 12790,
+      "sha256": "814baee94153b1e52fcf9ebffef7b720f2713d9a7a20616482134a3e61ada456"
+    },
+    {
+      "source_path": "tools/visual_nuscenes.py",
+      "published_path": "tools/visual_nuscenes.py",
+      "bytes": 121537,
+      "sha256": "83ca73f3c7e662732d9ba5beab57e40c38aacf224d2984b0dbfee137e23b7045"
+    },
+    {
+      "source_path": "tools/visualize.py",
+      "published_path": "tools/visualize.py",
+      "bytes": 877,
+      "sha256": "eb15c762185703ff444b9deb5e418ab1680ca0acfa5abdd8b1c3067b139ba5e4"
+    },
+    {
+      "source_path": "tools/create_infos_av2/create_av2_infos.py",
+      "published_path": "tools/create_infos_av2/create_av2_infos.py",
+      "bytes": 12830,
+      "sha256": "80b4b69d31a19226d1ce14dd43dd59ce1f5cd46927d5bbac2251be017049329b"
+    },
+    {
+      "source_path": "tools/create_infos_av2/gather_argo2_anno_feather.py",
+      "published_path": "tools/create_infos_av2/gather_argo2_anno_feather.py",
+      "bytes": 818,
+      "sha256": "e6223075e30e25ab36b57f47de0a87a7a65d7e7a08dc9f746cd831a8bc67cda4"
+    },
+    {
+      "source_path": "tools/data_converter/__init__.py",
+      "published_path": "tools/data_converter/__init__.py",
+      "bytes": 48,
+      "sha256": "3977d5ce6a7f8d8b9c01b0daa82c17214e4f3b1520320349ce34140916192c13"
+    },
+    {
+      "source_path": "tools/data_converter/nuscenes_converter.py",
+      "published_path": "tools/data_converter/nuscenes_converter.py",
+      "bytes": 28556,
+      "sha256": "7c0bbfa578ad7e8414969b4711240f451da092c6b90c4a9618e6a7f1ded8b312"
+    },
+    {
+      "source_path": "tools/video_demo/bev.py",
+      "published_path": "tools/video_demo/bev.py",
+      "bytes": 7716,
+      "sha256": "357229334ee21d61f3a1b83c7e48a3ea5bcdb2575392f1e86f027f86c9aaa84d"
+    },
+    {
+      "source_path": "tools/video_demo/cam_demo.py",
+      "published_path": "tools/video_demo/cam_demo.py",
+      "bytes": 9810,
+      "sha256": "68ded0737ea7e2a1aad7901657939af8e47ee53c0aae8f9d0c9180b9c7d00c4a"
+    },
+    {
+      "source_path": "visualisation/analyze_ego_distance_kde_7cls.py",
+      "published_path": "visualisation/analyze_ego_distance_kde_7cls.py",
+      "bytes": 14112,
+      "sha256": "3351d80a82f61a8375934a67b2fb276d6c5de5b8c326d1db8890658eb09f30df"
+    },
+    {
+      "source_path": "visualisation/analyze_ego_distance_performance.py",
+      "published_path": "visualisation/analyze_ego_distance_performance.py",
+      "bytes": 27837,
+      "sha256": "3ee1d3d1c851a4cf11b0e36232fe54dc889db6da540e4bd70b13e13a7b39f5cd"
+    },
+    {
+      "source_path": "visualisation/analyze_positive_vs_negative_similarity.py",
+      "published_path": "visualisation/analyze_positive_vs_negative_similarity.py",
+      "bytes": 13653,
+      "sha256": "6c0f43b8094edd99dcaa9347018d7c60672b3ce1a54562fac6afa681741fc1ce"
+    },
+    {
+      "source_path": "visualisation/analyze_proto_pairwise_heatmap.py",
+      "published_path": "visualisation/analyze_proto_pairwise_heatmap.py",
+      "bytes": 6687,
+      "sha256": "98d6a27854094a37250311460332de87aa61f76b61e97af3398dd5fa3d2c58a2"
+    },
+    {
+      "source_path": "visualisation/analyze_proto_pca_7cls.py",
+      "published_path": "visualisation/analyze_proto_pca_7cls.py",
+      "bytes": 16531,
+      "sha256": "f32f7a12df450010b1639f049f5560c67eb4015c71f43f559a47574c6c0079ea"
+    },
+    {
+      "source_path": "visualisation/analyze_proto_usage.py",
+      "published_path": "visualisation/analyze_proto_usage.py",
+      "bytes": 17623,
+      "sha256": "e7408e84b5c325ac81e2afc39f469016332914cafb9cfe212b03d029759cf909"
+    },
+    {
+      "source_path": "visualisation/plot_iter5000_clear_negative_similarity.py",
+      "published_path": "visualisation/plot_iter5000_clear_negative_similarity.py",
+      "bytes": 10727,
+      "sha256": "cec4b2203532dd481c2d29d4bdab54aafb65c5e8c746282cf74e805c36c6de76"
+    },
+    {
+      "source_path": "visualisation/plot_iter5000_positive_vs_negative_similarity.py",
+      "published_path": "visualisation/plot_iter5000_positive_vs_negative_similarity.py",
+      "bytes": 13127,
+      "sha256": "546c88ec2966aa15f95a94d39fadd391c8b3030204dcb73a4b288a96518e0ded"
+    },
+    {
+      "source_path": "visualisation/plot_iter5000_strict_positive_geometry.py",
+      "published_path": "visualisation/plot_iter5000_strict_positive_geometry.py",
+      "bytes": 12268,
+      "sha256": "f099dec8ab77591012d6cdd566b98083ddecc78739fee6dd3567648513e141b0"
+    },
+    {
+      "source_path": "visualisation/plot_iter6000_bev_examples_10cls_0929.py",
+      "published_path": "visualisation/plot_iter6000_bev_examples_10cls_0929.py",
+      "bytes": 5405,
+      "sha256": "b2e7e94f1c6c69d68d6902253b8c777ed8459e4fac342386111a77053aecf6d4"
+    },
+    {
+      "source_path": "visualisation/plot_iter6000_positive_vs_negative_similarity_10cls.py",
+      "published_path": "visualisation/plot_iter6000_positive_vs_negative_similarity_10cls.py",
+      "bytes": 18180,
+      "sha256": "8853e38b0d5036d873d54eb77561f1e8c59680f8d009397f0cc7a531fb32ac18"
+    },
+    {
+      "source_path": "visualisation/plot_proto_geometry_10cls_0929.py",
+      "published_path": "visualisation/plot_proto_geometry_10cls_0929.py",
+      "bytes": 6442,
+      "sha256": "9c0879cf833292ddd16e1fb048cb45bec5b38c10d7e8bd485e797d80947a6e4d"
+    },
+    {
+      "source_path": "ssl_aug_ab_2026-10-14/AB方案说明_2026-10-14.md",
+      "published_path": "ssl_aug_ab_2026-10-14/AB方案说明_2026-10-14.md",
+      "bytes": 2649,
+      "sha256": "7793f868f69ffea014228f8d6fc8935dd81e27bada76f7cdb1c23b5cd46c24a0"
+    },
+    {
+      "source_path": "ssl_aug_ab_2026-10-14/mv2dfusion_online_ema_aug_ab_v2_2026_10_14.py",
+      "published_path": "ssl_aug_ab_2026-10-14/mv2dfusion_online_ema_aug_ab_v2_2026_10_14.py",
+      "bytes": 723,
+      "sha256": "89f8013fc4a4a3a86358c01ac2564079eefa36dca497ade65e285c89ef59075c"
+    },
+    {
+      "source_path": "ssl_aug_ab_2026-10-14/ssl_online_r50_ema_aug_global_v2_2026_10_14.py",
+      "published_path": "ssl_aug_ab_2026-10-14/ssl_online_r50_ema_aug_global_v2_2026_10_14.py",
+      "bytes": 706,
+      "sha256": "26c7ebfc728cd42c04028ce656357592986f9ec3babb22c00a8691828eef8487"
+    },
+    {
+      "source_path": "ssl_aug_ab_2026-10-14/ssl_online_r50_ema_aug_target_v2_2026_10_14.py",
+      "published_path": "ssl_aug_ab_2026-10-14/ssl_online_r50_ema_aug_target_v2_2026_10_14.py",
+      "bytes": 518,
+      "sha256": "0a8bc16ddaa1f2193bedae8eb8dd070af93e76bda7cbc548a2ed1b07c20180ce"
+    },
+    {
+      "source_path": "ssl_aug_ab_2026-10-14/student_augment_ab_v2_2026_10_14.py",
+      "published_path": "ssl_aug_ab_2026-10-14/student_augment_ab_v2_2026_10_14.py",
+      "bytes": 7061,
+      "sha256": "732ef5e3db4042bb0fa03ca8b231d5e533a3809bacf0683179b6127eac7ebc6e"
+    },
+    {
+      "source_path": "ssl_aug_ab_2026-10-14/test_student_augment_ab_v2_2026_10_14.py",
+      "published_path": "ssl_aug_ab_2026-10-14/test_student_augment_ab_v2_2026_10_14.py",
+      "bytes": 7237,
+      "sha256": "ce72f43bd30b772639602139738913b967c6212c36001ede765465590065887d"
+    },
+    {
+      "source_path": "assemble_ssl_pkls_0924.py",
+      "published_path": "assemble_ssl_pkls_0924.py",
+      "bytes": 6206,
+      "sha256": "8323a3f61367c21737eab35431f9e5c9bfefa87da18e128f122d2b02dcbaf0bd"
+    },
+    {
+      "source_path": "audit_pseudo_empty_1012.py",
+      "published_path": "audit_pseudo_empty_1012.py",
+      "bytes": 6171,
+      "sha256": "cc4107073ac8bfef4f85c85baac47a847b51c86b0e13d5d2b408c45163a098df"
+    },
+    {
+      "source_path": "build_labeled_6000_0919.py",
+      "published_path": "build_labeled_6000_0919.py",
+      "bytes": 4771,
+      "sha256": "5ab38404cf5d357e519de853cca4701db7ef7834e7e95533e471921fe5dd93ab"
+    },
+    {
+      "source_path": "check_real_inputs_2026_10_14.py",
+      "published_path": "check_real_inputs_2026_10_14.py",
+      "bytes": 3000,
+      "sha256": "ff04f14e0169a147cd3b0e6fff488ceda91ce0e28eea4886b23139069ca399c1"
+    },
+    {
+      "source_path": "convert_filtered_nuscenes_0924.py",
+      "published_path": "convert_filtered_nuscenes_0924.py",
+      "bytes": 596,
+      "sha256": "5121d89e54f186d4f5eaa10f6a18fd147a934439988c2587925a913d7ff008bd"
+    },
+    {
+      "source_path": "create_ssl_split_manifest_0924.py",
+      "published_path": "create_ssl_split_manifest_0924.py",
+      "bytes": 5064,
+      "sha256": "eb610fea2791e8764be881a83f43cac55995e93da89757a48641201c68908686"
+    },
+    {
+      "source_path": "diagnose_export_repro_1012.py",
+      "published_path": "diagnose_export_repro_1012.py",
+      "bytes": 4289,
+      "sha256": "875bec7125f2fac67e77ee95c94c6c41a0347a6cd2d1bcaa01b654e0fb799e1f"
+    },
+    {
+      "source_path": "diagnose_export_repro_1012_initial.py",
+      "published_path": "diagnose_export_repro_1012_initial.py",
+      "bytes": 3053,
+      "sha256": "14b16c48a600931474bb74300215ab4c8648dd68107e5aba98ef09700bd2a1a2"
+    },
+    {
+      "source_path": "evaluate_online_ema_splits_1011.py",
+      "published_path": "evaluate_online_ema_splits_1011.py",
+      "bytes": 5692,
+      "sha256": "911e84fe6638bcdca0c3581cf26107584285757b1f6509c93b19d487ffcc79dd"
+    },
+    {
+      "source_path": "export_online_ema_npy_1011.py",
+      "published_path": "export_online_ema_npy_1011.py",
+      "bytes": 6075,
+      "sha256": "f65cd0721efbb650a4c4ea19fb149966e1a01d11fa49399b25ddc3ba8725a3f4"
+    },
+    {
+      "source_path": "export_proto_val_iter6000_0929.py",
+      "published_path": "export_proto_val_iter6000_0929.py",
+      "bytes": 11012,
+      "sha256": "c91199d03c330280fc900d1964c954b94a4e050b14d49045dae4d588036af1aa"
+    },
+    {
+      "source_path": "export_stage2_aligned_20261025.py",
+      "published_path": "export_stage2_aligned_20261025.py",
+      "bytes": 19768,
+      "sha256": "d74640641e907b4034554e57bb0a4856336a15383077592a724c53e4ce64c4f3"
+    },
+    {
+      "source_path": "filter_nuscenes_metadata_0924.py",
+      "published_path": "filter_nuscenes_metadata_0924.py",
+      "bytes": 6045,
+      "sha256": "2a96f0ea6a4d436c9edc8050f0ed376f504cfb4d1708d854c082f00dff8fc55a"
+    },
+    {
+      "source_path": "generate_ssl_pkls.py",
+      "published_path": "generate_ssl_pkls.py",
+      "bytes": 19028,
+      "sha256": "0893bf677431a237e32061dbc6eca0d722500270d30645d4ad0867801b021a55"
+    },
+    {
+      "source_path": "gpu_preflight_global_2026_10_19.py",
+      "published_path": "gpu_preflight_global_2026_10_19.py",
+      "bytes": 6053,
+      "sha256": "33dc07d72429e42db00119fceb02ba5cc1bdec29da65772c6e352bc8d648c116"
+    },
+    {
+      "source_path": "launch_global_training_2026_10_19.py",
+      "published_path": "launch_global_training_2026_10_19.py",
+      "bytes": 2256,
+      "sha256": "67c9e564cf99230d41810ee8f5f1b526bba74cca30859afc1b6418b3cad14f6d"
+    },
+    {
+      "source_path": "match_gt_after_test.py",
+      "published_path": "match_gt_after_test.py",
+      "bytes": 12412,
+      "sha256": "2cf189949e00803e3ca66de690d37ab69054aa2ae9df438514d4bd8349329b71"
+    },
+    {
+      "source_path": "plot_online_ema_npy_1011.py",
+      "published_path": "plot_online_ema_npy_1011.py",
+      "bytes": 10959,
+      "sha256": "559bd6ad32a23c873d8edc5c99663ed408e3ecd641dcdc4cd888835eba51bbef"
+    },
+    {
+      "source_path": "plot_stage2_results_20261025.py",
+      "published_path": "plot_stage2_results_20261025.py",
+      "bytes": 16904,
+      "sha256": "b7ff97b4abecb329127f832b9a7ad989ae9483866650f1007d63d7bccbb28277"
+    },
+    {
+      "source_path": "resume_npy_after_diagnostic_1012.py",
+      "published_path": "resume_npy_after_diagnostic_1012.py",
+      "bytes": 5445,
+      "sha256": "c1524685ae6b2a70e6d476be8dc02218aa92544266cba864743df9c661c80ab0"
+    },
+    {
+      "source_path": "run_npy_exports_1011.py",
+      "published_path": "run_npy_exports_1011.py",
+      "bytes": 2868,
+      "sha256": "858297e53ed738bfef79bd506e92885796948f46e60ff4c8e89e1ba537d9376a"
+    },
+    {
+      "source_path": "run_postprocess_evaluations_1011.py",
+      "published_path": "run_postprocess_evaluations_1011.py",
+      "bytes": 2271,
+      "sha256": "49f9d972dc0c42678ac8dd9685d51da96e6c74b458947d8523037026701b54f2"
+    },
+    {
+      "source_path": "run_preflight_1011.py",
+      "published_path": "run_preflight_1011.py",
+      "bytes": 3780,
+      "sha256": "197e6e39d7a48b2a536c20b56099f1b183ad2b1ae7396430ae6252080e3f0378"
+    },
+    {
+      "source_path": "run_preflight_global_2026_10_19.py",
+      "published_path": "run_preflight_global_2026_10_19.py",
+      "bytes": 4109,
+      "sha256": "6104595005d589cfc433918ca15a826b00edf279a636467b6b540a1d9aff8045"
+    },
+    {
+      "source_path": "run_r50_internal_test_1012.py",
+      "published_path": "run_r50_internal_test_1012.py",
+      "bytes": 2209,
+      "sha256": "2122f1e7474f56be915f3e76af59eba371853c2362d47ee4b718332b64728ef6"
+    },
+    {
+      "source_path": "run_stage2_exports_20261025.py",
+      "published_path": "run_stage2_exports_20261025.py",
+      "bytes": 3710,
+      "sha256": "fe5b5628c10c4b320493b54ade342ac3c571ab6b4186aef1015096f88d0d7305"
+    },
+    {
+      "source_path": "run_stage2_plots_20261025.py",
+      "published_path": "run_stage2_plots_20261025.py",
+      "bytes": 3953,
+      "sha256": "d149c4e82fe23a1cd26b84e7ee10f70107c5bf8aac1518d0baafd08b76d58a1e"
+    },
+    {
+      "source_path": "run_stage2_preflight_20261025.py",
+      "published_path": "run_stage2_preflight_20261025.py",
+      "bytes": 2667,
+      "sha256": "b204518102cd6d83e0989482f0d5348c9a71e01b8aa4af518175c0f397e9a11b"
+    },
+    {
+      "source_path": "run_visualisations_1011.py",
+      "published_path": "run_visualisations_1011.py",
+      "bytes": 1947,
+      "sha256": "94bbf57d0d22c4c18b9b4bfbb74e6ab2f5ad419210c6d151546762bccb6cca67"
+    },
+    {
+      "source_path": "select_train_scenes_6000_0916.py",
+      "published_path": "select_train_scenes_6000_0916.py",
+      "bytes": 15933,
+      "sha256": "52b8233ce299ccc5d6e98b3a2f14a54fb7937dea9cbb04af05753ab5bf1398d4"
+    },
+    {
+      "source_path": "smoke_online_ema_1011.py",
+      "published_path": "smoke_online_ema_1011.py",
+      "bytes": 6883,
+      "sha256": "4d624a3c31c2816d89bf528b155c786556d0d31881f1bbe088501cc5605289a2"
+    },
+    {
+      "source_path": "smoke_online_ssl_0919.py",
+      "published_path": "smoke_online_ssl_0919.py",
+      "bytes": 6122,
+      "sha256": "2d47a3d1efec56a86d74bf14736f955b6de8523e0f0b80d5ed9d07f8d77bcdf1"
+    },
+    {
+      "source_path": "supplement_stage2_usage_history_20261025.py",
+      "published_path": "supplement_stage2_usage_history_20261025.py",
+      "bytes": 7518,
+      "sha256": "d0a726004a23aa7a189738acd698a13b007e88a2dac232a2e68cdddf95e4f8ae"
+    },
+    {
+      "source_path": "test_ema_unit_1011.py",
+      "published_path": "test_ema_unit_1011.py",
+      "bytes": 1926,
+      "sha256": "a0176a7d7d7e4b7c8dfbd7ec4aa2580b29b4b3423029102170aa8061967a22b5"
+    },
+    {
+      "source_path": "test_online_filter_0919.py",
+      "published_path": "test_online_filter_0919.py",
+      "bytes": 1361,
+      "sha256": "e38ce2990fe7b3479274fa3d11cadf18a9601aeb55f0dd26c055b028ee818cbf"
+    },
+    {
+      "source_path": "test_student_augment_2026_10_14.py",
+      "published_path": "test_student_augment_2026_10_14.py",
+      "bytes": 9231,
+      "sha256": "f7be29891bdf0bb00ca4a307ba54c3ccb1617e601397240d527d64a78ace02c1"
+    },
+    {
+      "source_path": "test_student_augment_ab_v2_2026_10_14.py",
+      "published_path": "test_student_augment_ab_v2_2026_10_14.py",
+      "bytes": 7237,
+      "sha256": "ce72f43bd30b772639602139738913b967c6212c36001ede765465590065887d"
+    },
+    {
+      "source_path": "train_online_ema_1011.py",
+      "published_path": "train_online_ema_1011.py",
+      "bytes": 9198,
+      "sha256": "4a73e08ab33687a322397d2c1d11c875d3bbc4aa05db343abdf3703a8d7f4490"
+    },
+    {
+      "source_path": "train_online_ssl_0919.py",
+      "published_path": "train_online_ssl_0919.py",
+      "bytes": 1582,
+      "sha256": "0eda0b8e1550ff64f7c5b2898bfde19f3e96009f0bfc577dff6cd297253956ca"
+    },
+    {
+      "source_path": "train_prototype_stage1_0920.py",
+      "published_path": "train_prototype_stage1_0920.py",
+      "bytes": 13704,
+      "sha256": "46688b5e74062c0fe32e50361e6bb78a1bb2faa95572945f7620d826032910db"
+    },
+    {
+      "source_path": "train_prototype_stage2_20261025.py",
+      "published_path": "train_prototype_stage2_20261025.py",
+      "bytes": 22773,
+      "sha256": "8121921716feae82913a5ba134fee10956c88af6467db3914a8be53bd1908d76"
+    },
+    {
+      "source_path": "validate_online_ema_1011.py",
+      "published_path": "validate_online_ema_1011.py",
+      "bytes": 5339,
+      "sha256": "2feb246f749598a31d29208f1ec2ffa3930585cfd07babc241c7a38bf6049ac7"
+    },
+    {
+      "source_path": "validate_prototype_subset_0924.py",
+      "published_path": "validate_prototype_subset_0924.py",
+      "bytes": 6959,
+      "sha256": "459dcbab11d5a8a866a75478f5b9f2047ff6b6844fa145a52ac647ce6663ccd2"
+    },
+    {
+      "source_path": "validate_ssl_pkls.py",
+      "published_path": "validate_ssl_pkls.py",
+      "bytes": 7734,
+      "sha256": "096e75b9086708d668725c615c23d91f25a4f1c75b8ffcc5a12c388395ecbd07"
+    },
+    {
+      "source_path": "verify_proto_export_0929.py",
+      "published_path": "verify_proto_export_0929.py",
+      "bytes": 4453,
+      "sha256": "3ef1d2a6c6200ee8907b9e9f8b8c082406599fab6598f06dfe38c6792e36d8da"
+    },
+    {
+      "source_path": "verify_stage2_exports_20261025.py",
+      "published_path": "verify_stage2_exports_20261025.py",
+      "bytes": 5855,
+      "sha256": "6d614a73dd4360c1d3e1794cdba1013a4dcf7269416e61fcd0fef3374551119a"
+    },
+    {
+      "source_path": "verify_stage2_preparation_20261025.py",
+      "published_path": "verify_stage2_preparation_20261025.py",
+      "bytes": 6340,
+      "sha256": "ca4b9230c02b22e08f79285b20b30f8db3546122e6dd7c5297d33ce30fb611f0"
+    },
+    {
+      "source_path": "vis_prototypes.py",
+      "published_path": "vis_prototypes.py",
+      "bytes": 2649,
+      "sha256": "b7e65348246d70870b3bfaf06eb0b7870c8fa416c9e5c99c0b3ffca86ffa4926"
+    },
+    {
+      "source_path": "README.md",
+      "published_path": "docs/upstream/README.md",
+      "bytes": 7333,
+      "sha256": "7f032498a7907f95f7e837a30f6b8196c46194644a0b320432962ac82d23c593"
+    },
+    {
+      "source_path": "work_records/2026-10-25/compare_proto_val_6000_12000_20261025.py",
+      "published_path": "scripts/analysis/compare_proto_val_6000_12000_20261025.py",
+      "bytes": 11467,
+      "sha256": "8fe214dfb8ef44937c04007efd377a3751a981cbd38e9d7390c0ded1f66e9ef2"
+    },
+    {
+      "source_path": "work_records/2026-10-25/plot_two_confidence_distributions_test_20261025.py",
+      "published_path": "scripts/analysis/plot_two_confidence_distributions_test_20261025.py",
+      "bytes": 7270,
+      "sha256": "f3d7951495c41fa19729e307b4fa50ad529d6e30ed1c759b1ed8137fd7c8c587"
+    },
+    {
+      "source_path": "work_records/2026-10-26/plot_stage1_two_global_histograms_20261026.py",
+      "published_path": "scripts/analysis/plot_stage1_two_global_histograms_20261026.py",
+      "bytes": 10030,
+      "sha256": "2cf7d3e3dcf5b37f3d463a382cb639a7cb3749377dd6c6b191403f4e5817bc5b"
+    }
+  ]
+}

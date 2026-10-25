@@ -1,0 +1,17 @@
+# Observed research runtime, 2026-10-26. Not a portable installation lock.
+# Python 3.8.10; Linux; CUDA extensions require a matching CUDA toolchain.
+torch==1.10.0
+torchvision==0.11.1
+mmcv-full==1.6.1
+mmdet==2.25.1
+mmdet3d==1.0.0rc4
+mmsegmentation==0.28.0
+mmcls==0.23.2
+nuscenes-devkit==1.1.11
+spconv-cu113==2.3.6
+flash-attn==1.0.2
+torch-scatter==2.1.2
+numpy==1.23.5
+matplotlib==3.5.3
+scipy==1.10.1
+scikit-learn==1.3.2

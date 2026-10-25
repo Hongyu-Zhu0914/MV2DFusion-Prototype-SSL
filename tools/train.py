@@ -170,6 +170,18 @@ def main():
     # init distributed env first, since logger depends on the dist info.
     if args.launcher == 'none':
         distributed = False
+        # ===== 添加这段代码 =====
+        # 强制设置单卡环境，防止后续代码调用分布式函数
+        import torch.distributed as dist
+        if not dist.is_initialized():
+            os.environ['MASTER_ADDR'] = 'localhost'
+            os.environ['MASTER_PORT'] = '29500'
+            os.environ['WORLD_SIZE'] = '1'
+            os.environ['RANK'] = '0'
+            os.environ['LOCAL_RANK'] = '0'
+            # 初始化一个单卡的分布式进程组
+            dist.init_process_group(backend='nccl', init_method='env://', world_size=1, rank=0)
+            torch.cuda.set_device(0)
     else:
         distributed = True
         init_dist(args.launcher, **cfg.dist_params)

@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "config:prototype_stage1_r50_labeled6000_10cls_0923.py",
+      "status": "PASS"
+    },
+    {
+      "check": "config:prototype_stage2_labeled6000_10cls_20261025.py",
+      "status": "PASS"
+    },
+    {
+      "check": "config:ssl_online_r50_ema_aug_global_2026_10_19.py",
+      "status": "PASS"
+    },
+    {
+      "check": "test_ema_unit_1011.py",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 23.08
+    },
+    {
+      "check": "test_online_filter_0919.py",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 19.47
+    },
+    {
+      "check": "test_student_augment_ab_v2_2026_10_14.py",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 25.14
+    },
+    {
+      "check": "export_stage2_aligned_20261025.py",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 0.36
+    }
+  ],
+  "gpu_model_inference": false,
+  "training_started": false,
+  "dataset_available": false
+}

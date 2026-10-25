@@ -1,0 +1,3 @@
+# Preserve audited source bytes, including historical CRLF files.
+# SOURCE_MANIFEST.json verifies original bytes; do not normalize on checkout.
+* -text

@@ -1,0 +1,109 @@
+{
+  "status": "PASS",
+  "original_sources_unchanged": true,
+  "source_files": 277,
+  "source_bytes": 3159971,
+  "wrapper_checks": [
+    {
+      "entry": "scripts/prototype/train_stage1.py",
+      "status": "PASS"
+    },
+    {
+      "entry": "scripts/prototype/train_stage2.py",
+      "status": "PASS"
+    },
+    {
+      "entry": "scripts/ssl/train.py",
+      "status": "PASS"
+    },
+    {
+      "entry": "scripts/evaluation/evaluate_ssl.py",
+      "status": "PASS"
+    },
+    {
+      "entry": "scripts/evaluation/evaluate_subset.py",
+      "status": "PASS"
+    },
+    {
+      "entry": "scripts/evaluation/export_stage1.py",
+      "status": "PASS"
+    },
+    {
+      "entry": "scripts/evaluation/export_stage2.py",
+      "status": "PASS"
+    },
+    {
+      "entry": "scripts/visualization/plot_stage1_similarity.py",
+      "status": "PASS"
+    },
+    {
+      "entry": "scripts/visualization/plot_stage2.py",
+      "status": "PASS"
+    },
+    {
+      "entry": "scripts/data/build_labeled_split.py",
+      "status": "PASS"
+    },
+    {
+      "entry": "scripts/data/assemble_pkls.py",
+      "status": "PASS"
+    },
+    {
+      "entry": "scripts/data/validate_pkls.py",
+      "status": "PASS"
+    },
+    {
+      "entry": "scripts/diagnostics/pseudo_empty.py",
+      "status": "PASS"
+    }
+  ],
+  "no_data_weights_private_records": true,
+  "secret_pattern_scan": "PASS",
+  "source_and_generated_python_syntax": "PASS",
+  "limitation": "No dataset/GPU model inference or training was performed; paths and external dependencies still require setup.",
+  "cpu_validation": {
+    "status": "PASS",
+    "checks": [
+      {
+        "check": "config:prototype_stage1_r50_labeled6000_10cls_0923.py",
+        "status": "PASS"
+      },
+      {
+        "check": "config:prototype_stage2_labeled6000_10cls_20261025.py",
+        "status": "PASS"
+      },
+      {
+        "check": "config:ssl_online_r50_ema_aug_global_2026_10_19.py",
+        "status": "PASS"
+      },
+      {
+        "check": "test_ema_unit_1011.py",
+        "status": "PASS",
+        "exit_code": 0,
+        "seconds": 23.08
+      },
+      {
+        "check": "test_online_filter_0919.py",
+        "status": "PASS",
+        "exit_code": 0,
+        "seconds": 19.47
+      },
+      {
+        "check": "test_student_augment_ab_v2_2026_10_14.py",
+        "status": "PASS",
+        "exit_code": 0,
+        "seconds": 25.14
+      },
+      {
+        "check": "export_stage2_aligned_20261025.py",
+        "status": "PASS",
+        "exit_code": 0,
+        "seconds": 0.36
+      }
+    ],
+    "gpu_model_inference": false,
+    "training_started": false,
+    "dataset_available": false
+  },
+  "source_byte_preservation": "Git text normalization disabled to preserve original source checksums"
+}
