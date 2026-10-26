@@ -24,16 +24,15 @@
 | 原型Stage2评估＋特征导出 | 选择与权重对应的原型配置 | `scripts/evaluation/export_stage2.py` |
 | 原型相似度分布 | 显式指定特征、原型、GT PKL | `scripts/visualization/plot_stage1_similarity.py` |
 
-**为保证旧实验可定位与源码审计不失效，没有移动或重命名原训练脚本、模型和配置。** `scripts/`是按任务分类的薄包装，最终仍运行原入口；完整路径对应关系见 [代码地图](docs/CODE_MAP.md)。
+Python实现已按功能归类，根目录不再堆放脚本。模型与配置仍保留原路径；推荐入口不变，内部导入、子进程调用和源码审计路径同步更新。原实验目录没有改动。完整旧→新路径见 [搬移说明](docs/RELOCATION.md) 和 [代码地图](docs/CODE_MAP.md)。
 
 ```text
 projects/           模型、数据管线、nuScenes/Argoverse配置
 tools/              上游通用训练、测试和数据转换工具
-scripts/            分类入口：prototype / ssl / evaluation / data / visualization
+scripts/            训练、评估、数据、可视化、诊断与历史任务编排
+tests/unit/         CPU单元测试
 visualisation/      原有科学绘图实现
 docs/               方法状态、环境、数据、历史版本、发布验证
-train_*.py          原训练入口，保留路径与原始行为
-export_*.py         原特征导出入口，保留路径与原始行为
 ```
 
 ## 环境与准备

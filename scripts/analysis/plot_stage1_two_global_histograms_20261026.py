@@ -3,6 +3,17 @@
 CPU-only, streaming existing Stage1 projected features. Stage2 export supplies
 only token-aligned raw GT arrays, never its features or prototypes.
 """
+
+# Resolve imports and relative CLI paths after the publication-layout migration.
+import sys as _bootstrap_sys
+import os as _bootstrap_os
+from pathlib import Path as _BootstrapPath
+REPO_ROOT = _BootstrapPath(__file__).resolve().parents[2]
+if str(REPO_ROOT) not in _bootstrap_sys.path:
+    _bootstrap_sys.path.insert(0, str(REPO_ROOT))
+if __name__ == '__main__':
+    _bootstrap_os.chdir(str(REPO_ROOT))
+
 import csv
 import hashlib
 import importlib.util
@@ -16,7 +27,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from PIL import Image
 
-ROOT = Path('/root/MV2DFusion-main')
+ROOT = Path(str(REPO_ROOT))
 S1 = ROOT/'work_dirs/prototype_stage1_r50_labeled6000_10cls_0923'
 F1 = Path('/root/autodl-tmp/data/mv2dfusion_results/iter6000_val_full_0929')
 S2 = ROOT/'work_dirs/prototype_stage2_r50_labeled6000_10cls_20261025'
@@ -48,7 +59,7 @@ def main():
     outputs = [OUT/n for n in NAMES] + [OUT/(PREFIX+s) for s in ('.json', '.csv')]
     assert OUT.is_dir() and all(not p.exists() for p in outputs), 'Never overwrite existing results'
     old_hashes = {p.name: sha(p) for p in OUT.iterdir() if p.is_file()}
-    spec = importlib.util.spec_from_file_location('aligned_export', ROOT/'export_stage2_aligned_20261025.py')
+    spec = importlib.util.spec_from_file_location('aligned_export', ROOT/'scripts/evaluation/export_stage2_aligned_20261025.py')
     matching = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(matching)
     manifest = read(F1/'feature_manifest.json')
@@ -62,7 +73,7 @@ def main():
     previous = read(CHECK/'comparison.json')
     assert previous['checks']['stage1_snapshot_matches_full_checkpoint'] == 'PASS'
     assert sha(F1/'feature_manifest.json') == previous['source_sha256'][str(F1/'feature_manifest.json')]
-    assert sha(ROOT/'export_stage2_aligned_20261025.py') == previous['source_sha256'][str(ROOT/'export_stage2_aligned_20261025.py')]
+    assert sha(ROOT/'scripts/evaluation/export_stage2_aligned_20261025.py') == previous['source_sha256'][str(ROOT/'scripts/evaluation/export_stage2_aligned_20261025.py')]
     prototypes = normalize(np.load(prototype_path, allow_pickle=False))
     assert prototypes.shape == (10, 10, 256)
     hist = np.zeros((2, 10, 2, 40), np.int64)
@@ -166,7 +177,7 @@ def main():
         y_axis='raw sample count per bin; no per-frame or group normalization',
         band_matches_previous_comparison=True,old_files_unchanged=True,old_file_sha256=old_hashes,
         prototype_source=str(prototype_path),prototype_sha256=sha(prototype_path),
-        source_code_sha256=sha(__file__),matching_code_sha256=sha(ROOT/'export_stage2_aligned_20261025.py'),
+        source_code_sha256=sha(__file__),matching_code_sha256=sha(ROOT/'scripts/evaluation/export_stage2_aligned_20261025.py'),
         files={name:dict(bytes=(OUT/name).stat().st_size,sha256=sha(OUT/name)) for name in NAMES},
         rows=rows,runtime_seconds=time.time()-started,
         limitation='Not precision/recall; ambiguous/duplicate-near-GT queries excluded. Old four images retained.')

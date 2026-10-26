@@ -3,6 +3,17 @@
 No model inference or source-head changes. Match globally before filtering scores.
 The old band-rematch CSV is a separate regression check, not the primary result.
 """
+
+# Resolve imports and relative CLI paths after the publication-layout migration.
+import sys as _bootstrap_sys
+import os as _bootstrap_os
+from pathlib import Path as _BootstrapPath
+REPO_ROOT = _BootstrapPath(__file__).resolve().parents[2]
+if str(REPO_ROOT) not in _bootstrap_sys.path:
+    _bootstrap_sys.path.insert(0, str(REPO_ROOT))
+if __name__ == '__main__':
+    _bootstrap_os.chdir(str(REPO_ROOT))
+
 import csv
 import hashlib
 import importlib.util
@@ -14,7 +25,7 @@ import time
 import numpy as np
 import torch
 
-ROOT = Path('/root/MV2DFusion-main')
+ROOT = Path(str(REPO_ROOT))
 S1 = ROOT / 'work_dirs/prototype_stage1_r50_labeled6000_10cls_0923'
 S2 = ROOT / 'work_dirs/prototype_stage2_r50_labeled6000_10cls_20261025'
 F1 = Path('/root/autodl-tmp/data/mv2dfusion_results/iter6000_val_full_0929')
@@ -64,7 +75,7 @@ def main():
     started = time.time()
     assert not (OUT / 'comparison.json').exists(), 'Completed result already exists; do not rerun.'
     OUT.mkdir(parents=True, exist_ok=True)
-    spec = importlib.util.spec_from_file_location('aligned_export', ROOT / 'export_stage2_aligned_20261025.py')
+    spec = importlib.util.spec_from_file_location('aligned_export', ROOT / 'scripts/evaluation/export_stage2_aligned_20261025.py')
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     m1, m2 = read(F1/'feature_manifest.json'), read(F2/'feature_manifest.json')
@@ -174,7 +185,7 @@ def main():
                   stage1_valid_queries=query_count, stage2_valid_queries=sum(x['valid_candidates'] for x in m2),
                   checks=dict(tokens='PASS', stage1_snapshot_matches_full_checkpoint='PASS',
                               legacy_band_rematch_csv='PASS', stage2_saved_statistics='PASS'),
-                  source_sha256={str(p):sha(p) for p in (Path(__file__), ROOT/'export_stage2_aligned_20261025.py',
+                  source_sha256={str(p):sha(p) for p in (Path(__file__), ROOT/'scripts/evaluation/export_stage2_aligned_20261025.py',
                       F1/'feature_manifest.json', F2/'feature_manifest.json', snap_path, csv_path, saved_stats_path)},
                   macro_gap_stage1=float(np.mean([x['gap'] for x in r1])),
                   macro_gap_stage2=float(np.mean([x['gap'] for x in r2])),

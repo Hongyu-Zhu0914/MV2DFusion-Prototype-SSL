@@ -1,4 +1,4 @@
-"""Categorized compatibility entry; executes the original root script."""
+"""Categorized entry; executes the implementation at its relocated path."""
 from pathlib import Path
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))

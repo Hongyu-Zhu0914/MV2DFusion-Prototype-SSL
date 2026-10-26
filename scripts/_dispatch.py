@@ -1,4 +1,4 @@
-"""Preserve the root entrypoint's __file__, imports, and working directory."""
+"""Run a categorized implementation with the repository as working directory."""
 from pathlib import Path
 import os
 import runpy

@@ -13,6 +13,8 @@ SKIP = {'.git', '__pycache__', '.pytest_cache'}
 def main():
     errors = []
     checked = 0
+    if list(ROOT.glob('*.py')):
+        errors.append('Root Python scripts must live in categorized scripts/ or tests/unit/')
     patterns = [re.compile(r'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----'),
                 re.compile(r'\b(?:gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{30,})\b')]
     for path in ROOT.rglob('*'):

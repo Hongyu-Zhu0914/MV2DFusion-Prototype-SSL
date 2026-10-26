@@ -135,7 +135,7 @@ def main():
     ]
     assert [cfg.model.augmentation_scope for cfg in configs]==['global','target']
     assert configs[0].work_dir != configs[1].work_dir
-    from train_online_ema_1011 import setup
+    from scripts.ssl.train_online_ema_1011 import setup
     from mmdet.models import DETECTORS
     for cfg in configs:
         setup(cfg)
